@@ -2820,14 +2820,11 @@ hr {
 .slider-bg1 {
   background-image: url(../img/hero/gerbang.jpg);
 }
-.slider-bg2 {
-  background-image: url(../img/gallery/maquet.jpg);
-}
 .slider-bg3 {
   background-image: url(../img/gallery/maquet2.jpg);
 }
 .slider-bg2 {
-  background-image: url(../img/hero/h2_hero1.jpg);
+  background-image: url(../img/hero/gerbang.jpg);
 }
 .slider-area {
   background-color: #fcf2eb;
@@ -3322,7 +3319,7 @@ hr {
   color: #fff;
 }
 .visit-three .visit-team {
-  background-image: url(../img/gallery/visit1.jpg);
+  background-image: url(../img/gallery/fotosiswalogo.jpg);
   background-size: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3428,7 +3425,7 @@ hr {
   }
 }
 .visit-one .visit-team {
-  background-image: url(../img/gallery/visit2.jpg);
+  background-image: url(../img/gallery/sekolahpenggerak2.jpg);
   background-color: #fff6ee;
   background-size: cover;
   background-size: 100% 100%;

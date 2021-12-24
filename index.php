@@ -144,7 +144,7 @@
                     <div class="col-xl-8 col-lg-8 col-md-10">
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-40">
-                            <h2>Programs we Offer</h2>
+                            <h2>Recent Article</h2>
                             <p>Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer
                                 efficitur tellus metus, sed feugiat leo posuere ac. Morbi vitae tincidunt mi, et
                                 malesuada massa.</p>

@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>PPDB | SMP Hangtuah 6 Excellent</title>
+    <title>PPDB | SMP Hang Tuah 6 Excellent</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php echo $icon; ?>
@@ -26,7 +26,7 @@
 <body>
     <header>
         <div class="header-area">
-            <!-- <div class="main-header ">
+            <div class="main-header ">
                 <div class="header-top">
                     <div class="container">
                         <div class="row">
@@ -42,7 +42,7 @@
                                         
                                         <div class="cd-timer" id="countdown">
                                             <div class="cd-item">
-                                                <span>40</span>
+                                                <span>60</span>
                                                 <p>Days</p>
                                             </div>
                                             <div class="cd-item">
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="header-bottom  header-sticky">
                 <div class="container">
                     <div class="d-flex align-items-center justify-content-between flex-wrap position-relative">
@@ -94,7 +94,7 @@
                         <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-9">
                             <div class="hero-caption hero-caption2">
                                 <h2>Penerimaan Peserta Didik Baru</h2>
-                                <p>SMP Hangtuah 6 Excellent Juanda Sidoarjo </br> Tahun Ajaran 2022-2023</p>
+                                <p>SMP Hang Tuah 6 Excellent Juanda Sidoarjo </br> Tahun Ajaran 2022-2023</p>
                             </div>
                         </div>
                     </div>
@@ -118,7 +118,46 @@
             </div>
         </section>
         <!-- About Area E n d -->
-        
+        <!--? Start Sample Area -->
+		<section class="sample-text-area">
+			<div class="container box_1170">
+				<h3 class="text-heading">Syarat Administrasi</h3>
+				<p class="sample-text">
+					1. Formulir Pendaftaran yang telah diisi</br>
+                    2. Pas Foto 3x4 (2 Lembar) background biru</br>
+                    3. Fotokopi KK</br>
+                    4. Fotokopi Akta Kelahiran</br>
+                    5. Fotokopi KTP Orangtua</br>
+                    6. Fotokopi Ijazah dan SKHUN telah dilegalisir (apabila sudah terbit)</br>
+                    7. Bagi putra/putri TNI AL aktif, melampirkan slip gaji dan fotokopi kartu keluarga anggota</br>
+                    8. Bagi putra/putri TNI AL purnawirawan, melampirkan SKep Pensiun dan fotokopi kartu keluarga anggota</br></br></br>					
+				</p>
+			</div>
+            <div class="container box_1170">
+				<h3 class="text-heading">Langkah-langkah Pendaftaran</h3>
+				<p class="sample-text">
+					1. Gelombang 1 dibuka per tanggal 1 November 2021-31 Desember 2021. Sedangkan gelombang 2 dibuka per tanggal 1 Januari-Kuota Terpenuhi</br>
+                    2. Calon siswa dapat datang ke sekolah secara langsung atau mengisi formulir PPDB online melalui <a href="https://bit.ly/e-formppdbsmpht6exc22-23" ><b>https://bit.ly/e-formppdbsmpht6exc22-23</b></a></br>
+                    3. Melakukan pembayaran Biaya Pendidikan yang dapat dilihat berdasarkan kategori, melalui <a href="https://drive.google.com/drive/folders/17ZYAoje9WyBaImrhyj4XfaHVVmXGzQYB?usp=sharing"><b> Daftar Biaya Pendidikan</b></a></br>
+                    4. Biaya pendidikan dapat diangsur dengan menitipkan minimal dana 25% dari keseluruhan biaya, dan batas pembayaran selama 1 semester (Desember 2022)</br>
+                    					
+				</p>
+			</div>
+            <div class="container box_1170 border-top-generic">
+            
+            <div class="button-group-area mt-40">
+            <h3 class="text-heading">Informasi lebih lanjut, anda dapat menghubungi kami melalui:</h3>
+                <a href="https://wa.me/6285163006904?text=Halo%20Assalamualaikum,%20mohon%20informasi%20detail%20tentang%20PPDB" class="genric-btn primary radius">WhatsApp Business SMP Hang Tuah 6 Excellent</a>
+                <a href="#" class="genric-btn success radius">Join Group WhatsApp Informasi PPDB 2022/2023</a>
+                <!-- <a href="#" class="genric-btn info radius">Info</a>
+                <a href="#" class="genric-btn warning radius">Warning</a>
+                <a href="#" class="genric-btn danger radius">Danger</a>
+                <a href="#" class="genric-btn link radius">Link</a>
+                <a href="#" class="genric-btn disable radius">Disable</a> -->
+            </div>
+            </div>
+		</section>
+		<!-- End Sample Area -->
         
        
     </main>

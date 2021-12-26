@@ -3325,7 +3325,8 @@ hr {
   background-repeat: no-repeat;
   background-position: center center;
   height: 752px;
-  width: 57%;
+  /* width: 57%; */
+  width: 75%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .visit-three .visit-team {
@@ -3388,6 +3389,7 @@ hr {
 }
 .visit-one .tailor-details {
   width: 43%;
+  /* width: 30%; */
   padding: 20px 40px 20px 80px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3433,6 +3435,7 @@ hr {
   background-position: center center;
   height: 628px;
   width: 52%;
+  /* width: 70%; */
 }
 .visit-one .visit-team .wrapper {
   position: relative;

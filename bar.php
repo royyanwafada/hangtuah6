@@ -79,7 +79,6 @@ $menubar = "
                     <ul class=\"submenu\">
                         <li><a href=\"#\">OSIS</a></li>
                         <li><a href=\"#\">Extracurricular</a></li>
-                        <li><a href=\"#\">Xpresia</a></li>
                         <li><a href=\"#\">Profil Alumni</a></li>
                     </ul>
                 </li>
@@ -91,7 +90,7 @@ $menubar = "
                     </ul>
                 <li><a href=\"".$domain."ppdb/\">PPDB</a></li>
                 <li><a href=\"contact.html\">Gallery</a></li>
-                <li><a href=\"".$domain."kontak/\">Contact</a></li>
+                <li><a href=\"".$domain."contact/\">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -119,8 +118,7 @@ $footer =
                             <div class=\"single-footer-caption mb-50\">
                                 <div class=\"single-footer-caption mb-20\">
                                     <div class=\"footer-logo mb-35\">
-                                        <a href=\"index.html\"><img src=\"".$domain."assets/img/logo/logonew3.png\" alt=\"\"></a>
-                                        <img src=\"".$domain."assets/img/logo/logosp.PNG\" width=\"201\" alt=\"\">
+                                        <a href=\"index.html\"><img height=100% width=210px src=\"".$domain."assets/img/logo/logobawah.png\" alt=\"\"></a>
                                     </div>
                                 </div>
                             </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SMP Hangtuah 6 Excellent</title>
+    <title>SMP Hang Tuah 6 Excellent</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -94,13 +94,13 @@
                             <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-10 col-sm-12">
                                 <div class="hero-caption">
                                     <span data-animation="fadeInUp" data-delay=".2s" class
-                                        style="animation-delay: 0.2s;">SMP HANGTUAH 6 EXCELLENCE</span>
+                                        style="animation-delay: 0.2s;">SMP HANG TUAH 6 EXCELLENT</span>
                                     <h1 data-animation="fadeInUp" data-delay=".2s" class style="animation-delay: 0.2s;">
-                                        Be Wise, Be Smart, Be Excellence</h1>
+                                        Be Wise, Be Smart, Be Excellent</h1>
                                     <P data-animation="fadeInUp" data-delay=".4s" class style="animation-delay: 0.2s;">
-                                        Telah dibuka pendaftaran Siswa Baru Tahun Ajaran 2021-2022.</P>
-                                    <a href="#" class="btn_1 hero-btn" data-animation="fadeInUp" data-delay=".8s"
-                                        style="animation-delay: 0.2s;">Daftar Sekarang</a>
+                                        Your Excellenct Future Begins Here!</P>
+                                    <a href="#ppdb" class="btn_1 hero-btn" data-animation="fadeInUp" data-delay=".8s"
+                                        style="animation-delay: 0.2s;" >Join Now!</a>
                                 </div>
                             </div>
                         </div>
@@ -145,9 +145,9 @@
                         <!-- Section Tittle -->
                         <div class="section-tittle text-center mb-40">
                             <h2>Recent Article</h2>
-                            <p>Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer
+                            <!-- <p>Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer
                                 efficitur tellus metus, sed feugiat leo posuere ac. Morbi vitae tincidunt mi, et
-                                malesuada massa.</p>
+                                malesuada massa.</p> -->
                         </div>
                     </div>
                 </div>
@@ -155,12 +155,11 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="single-blogs mb-30">
                             <div class="blog-img">
-                                <img src="assets/img/gallery/blog1.jpg" alt="">
+                                <img src="assets/img/post/sambut.jpeg" alt="">
                             </div>
                             <div class="blog-caption">
-                                <h3><a href="#">Faculty of Science</a></h3>
-                                <p>Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi vitae tincidunt mi,
-                                    et malesuada massa. Sed blandit placerat elit sit amet condimentum.</p>
+                                <h3><a href="#">Ketua Pembina Yayasan Hang Tuah Apresiasi Siswa Pembawa Acara 4 Bahasa</a></h3>
+                                <p>Pembawa acara empat bahasa oleh siswa SMP Hang Tuah 6 Excellent mendapat apresiasi Ketua Pembina Yayasan Hang Tuah Ibu Vero Yudo Margono. Apresiasi disampaikan secara...</p>
                                 <a href="#" class="browse-btn">Learn More</a>
                             </div>
                         </div>
@@ -168,12 +167,11 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="single-blogs">
                             <div class="blog-img">
-                                <img src="assets/img/gallery/blog2.jpg" alt="">
+                                <img src="assets/img/post/anbk.jpg" alt="">
                             </div>
                             <div class="blog-caption">
-                                <h3><a href="#">Faculty of Arts</a></h3>
-                                <p>Integer efficitur tellus metus, sed feugiat leo posuere ac. Morbi vitae tincidunt mi,
-                                    et malesuada massa. Sed blandit placerat elit sit amet condimentum.</p>
+                                <h3><a href="#">SMP Hang Tuah 6 Excellent Juanda Sukses Selenggarakan ANBK 2021</a></h3>
+                                <p>Sebanyak 45 siswa SMP Hang Tuah 6 Excellent Juanda Sidoarjo mengikuti Asesmen Nasional Berbasis Komputer (ANBK) 2021 selama dua hari, (4-5/10). Pelaksanaan ANBK dihadiri...</p>
                                 <a href="#" class="browse-btn">Learn More</a>
                             </div>
                         </div>
@@ -183,12 +181,12 @@
         </section>
         <!-- Services Ara E n d -->
         <!--? Visit Our t h r e e -->
-        <section class="visit-three fix">
+        <section class="visit-three fix" id="ppdb">
             <!--left Contents  -->
             <div class="tailor-details">
                 <div class="section-tittle mb-40">
                     <h2>student admission (ppdb)</h2>
-                    <p>Kami telah membuka Penerimaan Peserta Didik Baru Tahun Ajaran 2021-2022</p>
+                    <p>Kami telah membuka Pendaftaran Peserta Didik Baru Tahun Ajaran 2021-2022</p>
                 </div>
                 <!-- Single -->
                 <div class="single-gallery mb-15">
@@ -196,7 +194,7 @@
                         <div class="thumb-content">
                             <div class="capt">
                                 <h3>Informasi Detail</h3>
-                                <p>Mengenai persyaratan, jadwal pendaftaran, dan tahapan seleksi, .</p>
+                                <p>Mengenai persyaratan dan jadwal pendaftaran.</p>
                             </div>
                             <a href="ppdb/index.php"><i class="ti-angle-right"></i></a>
                         </div>
@@ -220,7 +218,7 @@
                         <div class="thumb-content">
                             <div class="capt">
                                 <h3>Formulir Pendaftaran Online</h3>
-                                <p>Formulir</p>
+                                <p>Isi Formulir Pendaftaran disini</p>
                             </div>
                             <a href="https://bit.ly/e-formppdbsmpht6exc22-23"><i class="ti-angle-right"></i></a>
                         </div>
@@ -238,7 +236,7 @@
                     <div class="col-xl-12">
                         <!-- Section Tittle -->
                         <div class="section-tittle  d-flex justify-content-between align-items-center">
-                            <h2>Top Stories</h2>
+                            <h2>Gallery</h2>
                             <a href="#" class="browse-btn mb-20">More Stories</a>
                         </div>
                     </div>
@@ -248,11 +246,10 @@
                         <div class="properties pb-30">
                             <div class="properties__card">
                                 <div class="properties__img">
-                                    <a href="#"><img src="assets/img/gallery/class-img1.jpg" alt=""></a>
+                                    <a href="#"><img src="assets/img/gallery/gallery1.jpeg" alt=""></a>
                                 </div>
                                 <div class="properties__caption text-center">
-                                    <h3><a href="#">Linguistics alumna says recognizing Indigenous Languages Day is
-                                            crucial to our histories</a></h3>
+                                    <h3><a href="#">Sosialisasi PPDB Tahun Ajaran 2022/2023 SD Sedati Agung</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -261,11 +258,10 @@
                         <div class="properties pb-30">
                             <div class="properties__card">
                                 <div class="properties__img">
-                                    <a href="#"><img src="assets/img/gallery/class-img2.jpg" alt=""></a>
+                                    <a href="#"><img src="assets/img/gallery/gallery2.jpeg" alt=""></a>
                                 </div>
                                 <div class="properties__caption text-center">
-                                    <h3><a href="#">Linguistics alumna says recognizing Indigenous Languages Day is
-                                            crucial to our histories</a></h3>
+                                    <h3><a href="#">Kegiatan Penilaian Akhir Semester Ganjil Tahun Ajaran 2021/2022</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -274,11 +270,10 @@
                         <div class="properties pb-30">
                             <div class="properties__card">
                                 <div class="properties__img">
-                                    <a href="#"><img src="assets/img/gallery/class-img3.jpg" alt=""></a>
+                                    <a href="#"><img src="assets/img/gallery/gallery3.jpeg" alt=""></a>
                                 </div>
                                 <div class="properties__caption text-center">
-                                    <h3><a href="#">Linguistics alumna says recognizing Indigenous Languages Day is
-                                            crucial to our histories</a></h3>
+                                    <h3><a href="#">Sosialisasi Program Sekolah Akhir Semester Ganjil 2021/2022</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -376,34 +371,34 @@
 
     <!-- JS here -->
     <!-- Jquery, Popper, Bootstrap -->
-    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- Slick-slider , Owl-Carousel ,slick-nav , Counter-->
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
-    <script src="./assets/js/jquery.slicknav.min.js"></script>
-    <script src="./assets/js/countdown.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/countdown.min.js"></script>
 
     <!--wow , counter , waypoint, Nice-select -->
-    <script src="./assets/js/wow.min.js"></script>
-    <script src="./assets/js/jquery.magnific-popup.js"></script>
-    <script src="./assets/js/jquery.nice-select.min.js"></script>
-    <script src="./assets/js/jquery.counterup.min.js"></script>
-    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
 
     <!-- contact js -->
-    <script src="./assets/js/contact.js"></script>
-    <script src="./assets/js/jquery.form.js"></script>
-    <script src="./assets/js/jquery.validate.min.js"></script>
-    <script src="./assets/js/mail-script.js"></script>
-    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/jquery.form.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/mail-script.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
 
     <!--  Plugins, main-Jquery -->
-    <script src="./assets/js/plugins.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

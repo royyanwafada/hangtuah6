@@ -148,7 +148,7 @@
             <div class="button-group-area mt-40">
             <h3 class="text-heading">Informasi lebih lanjut, anda dapat menghubungi kami melalui:</h3>
                 <a href="https://wa.me/6285163006904?text=Halo%20Assalamualaikum,%20mohon%20informasi%20detail%20tentang%20PPDB" class="genric-btn primary radius">WhatsApp Business SMP Hang Tuah 6 Excellent</a>
-                <a href="#" class="genric-btn success radius">Join Group WhatsApp Informasi PPDB 2022/2023</a>
+                <a href="https://chat.whatsapp.com/JkUojZGuTKF8sZjyRqqRoI" class="genric-btn success radius">Join Group WhatsApp Informasi PPDB 2022/2023</a>
                 <!-- <a href="#" class="genric-btn info radius">Info</a>
                 <a href="#" class="genric-btn warning radius">Warning</a>
                 <a href="#" class="genric-btn danger radius">Danger</a>

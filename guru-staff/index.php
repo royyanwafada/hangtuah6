@@ -78,43 +78,6 @@
                         <div class="properties pb-30">
                             <div class="properties__card">
                                 <div class="properties__img">
-                                    <a href="#"><img src="pict/alfiyah.jpg" alt=""></a>
-                                </div>
-                                <div class="properties__caption text-center">
-                                    <h3><a href="#">Alfiyah Meysari N. S.Pd</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties pb-30">
-                            <div class="properties__card">
-                                <div class="properties__img">
-                                    <a href="#"><img src="pict/bustomi.jpg" alt=""></a>
-                                </div>
-                                <div class="properties__caption text-center">
-                                    <h3><a href="#">Bustomi</a></h3>
-                                    <p>Staff bagian kepegawaian</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties pb-30">
-                            <div class="properties__card">
-                                <div class="properties__img">
-                                    <a href="#"><img src="pict/dyah.jpg" alt=""></a>
-                                </div>
-                                <div class="properties__caption text-center">
-                                    <h3><a href="#">Dyah Restyarini, S.Kom.</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties pb-30">
-                            <div class="properties__card">
-                                <div class="properties__img">
                                     <a href="#"><img src="pict/irra.jpg" alt=""></a>
                                 </div>
                                 <div class="properties__caption text-center">
@@ -128,11 +91,11 @@
                         <div class="properties pb-30">
                             <div class="properties__card">
                                 <div class="properties__img">
-                                    <a href="#"><img src="pict/maharani.jpg" alt=""></a>
+                                    <a href="#"><img src="pict/raudatul.jpg" alt=""></a>
                                 </div>
                                 <div class="properties__caption text-center">
-                                    <h3><a href="#">Maharani Gita K., S.Pd.</a></h3>
-                                    <p>Staff bagian kepegawaian</p>
+                                    <h3><a href="#">Raudatul Ula, S.Pd.</a></h3>
+                                    <p>Kurikulum</br>Guru Bahasa Inggris</p>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +108,7 @@
                                 </div>
                                 <div class="properties__caption text-center">
                                     <h3><a href="#">Mufid Widodo, S.Pd.</a></h3>
-                                    <p>Staff bagian kepegawaian</p>
+                                    <p>Kesiswaan</br>Guru PPKn</p>
                                 </div>
                             </div>
                         </div>
@@ -154,11 +117,11 @@
                         <div class="properties pb-30">
                             <div class="properties__card">
                                 <div class="properties__img">
-                                    <a href="#"><img src="pict/nanda.jpg" alt=""></a>
+                                    <a href="#"><img src="pict/alfiyah.jpg" alt=""></a>
                                 </div>
                                 <div class="properties__caption text-center">
-                                    <h3><a href="#">Nanda Eriko, M.Pd.</a></h3>
-                                    <p>Staff bagian kepegawaian</p>
+                                    <h3><a href="#">Alfiyah Meysari N. S.Pd.</a></h3>
+                                    <p>Guru Bahasa Indonesia/Bahasa Jawa</p>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +134,7 @@
                                 </div>
                                 <div class="properties__caption text-center">
                                     <h3><a href="#">Nur Utaminingtyas, S.Pd.</a></h3>
-                                    <p>Staff bagian kepegawaian</p>
+                                    <p>Guru IPA</p>
                                 </div>
                             </div>
                         </div>
@@ -180,63 +143,11 @@
                         <div class="properties pb-30">
                             <div class="properties__card">
                                 <div class="properties__img">
-                                    <a href="#"><img src="pict/raudatul.jpg" alt=""></a>
+                                    <a href="#"><img src="pict/nanda.jpg" alt=""></a>
                                 </div>
                                 <div class="properties__caption text-center">
-                                    <h3><a href="#">Raudatul Ula, S.Pd.</a></h3>
-                                    <p>Staff bagian kepegawaian</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties pb-30">
-                            <div class="properties__card">
-                                <div class="properties__img">
-                                    <a href="#"><img src="pict/reza.jpg" alt=""></a>
-                                </div>
-                                <div class="properties__caption text-center">
-                                    <h3><a href="#">Reza Roesmiranti H., S.Psi., M.Si.</a></h3>
-                                    <p>Staff bagian kepegawaian</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties pb-30">
-                            <div class="properties__card">
-                                <div class="properties__img">
-                                    <a href="#"><img src="pict/risa.jpg" alt=""></a>
-                                </div>
-                                <div class="properties__caption text-center">
-                                    <h3><a href="#">Risa Anggraini, M.Pd.</a></h3>
-                                    <p>Staff bagian kepegawaian</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties pb-30">
-                            <div class="properties__card">
-                                <div class="properties__img">
-                                    <a href="#"><img src="pict/sirojuddin.jpg" alt=""></a>
-                                </div>
-                                <div class="properties__caption text-center">
-                                    <h3><a href="#">M. Sirojuddin Kiram., S.Pd.</a></h3>
-                                    <p>Staff bagian kepegawaian</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties pb-30">
-                            <div class="properties__card">
-                                <div class="properties__img">
-                                    <a href="#"><img src="pict/slamet.jpg" alt=""></a>
-                                </div>
-                                <div class="properties__caption text-center">
-                                    <h3><a href="#">Slamet</a></h3>
-                                    <p>Staff bagian kepegawaian</p>
+                                    <h3><a href="#">Nanda Eriko, M.Pd.</a></h3>
+                                    <p>Sarana Prasarana</br>Guru PJOK</p>
                                 </div>
                             </div>
                         </div>
@@ -249,11 +160,208 @@
                                 </div>
                                 <div class="properties__caption text-center">
                                     <h3><a href="#">Yasinda Widya Fahmi, M.Pd.</a></h3>
-                                    <p>Staff bagian kepegawaian</p>
+                                    <p>Guru Kesenian/Prakarya</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/sirojuddin.jpg" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">M. Sirojuddin Kiram., S.Pd.</a></h3>
+                                    <p>Guru PAI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/reza.jpg" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">Reza Roesmiranti H., S.Psi., M.Si.</a></h3>
+                                    <p>Guru Bimbingan Konseling</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/maharani.jpg" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">Maharani Gita K., S.Pd.</a></h3>
+                                    <p>Guru Matematika</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/risa.jpg" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">Risa Anggraini, M.Pd.</a></h3>
+                                    <p>Guru Matematika/Kebaharian</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/dummy.png" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">I Wayan Sudiarga S. Pd. H.</a></h3>
+                                    <p>Guru Agama Hindu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/dummy.png" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">Margo Anita M. Th.</a></h3>
+                                    <p>Guru Agama Kristen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/dummy.png" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">Alexander V.</a></h3>
+                                    <p>Guru Agama Katolik</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/dummy.png" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">I Made Mardiana P.</a></h3>
+                                    <p>Guru IPS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/dummy.png" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">Noval Amanda F. S. Pd.</a></h3>
+                                    <p>Guru Bahasa Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/dyah.jpg" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">Dyah Restyarini, S.Kom.</a></h3>
+                                    <p>Staff Tata Usaha</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/dummy.png" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">Novita Eka S. R. A. Md. Kep.</a></h3>
+                                    <p>Staff Uks / Tata Usaha</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/shinta.jpg" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">Shinta Dyah M. S. Ak.</a></h3>
+                                    <p>Staff Bendahara</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/bustomi.jpg" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">Bustomi</a></h3>
+                                    <p>Penata</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/slamet.jpg" alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">Slamet</a></h3>
+                                    <p>Penata</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="properties pb-30">
+                            <div class="properties__card">
+                                <div class="properties__img">
+                                    <a href="#"><img src="pict/dummy.png"  alt=""></a>
+                                </div>
+                                <div class="properties__caption text-center">
+                                    <h3><a href="#">Dwi</a></h3>
+                                    <p>Penata</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </section>

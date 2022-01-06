@@ -104,12 +104,13 @@
         <!--?  Contact Area start  -->
         <section class="contact-section">
             <div class="container">
-                <div class="d-none d-sm-block mb-5 pb-4">
+                <div class="d-sm-block mb-5 pb-4">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.7467901945092!2d112.76293561472333!3d-7.382248494673237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5ec6cd9ba47%3A0x2059ede1aac92a50!2sSMP%20Hang%20Tuah%206%20Excellent!5e0!3m2!1sid!2sid!4v1635568627901!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     <div class="button-group-area mt-40">
                         <h3 class="text-heading">Informasi lebih lanjut, anda dapat menghubungi kami melalui:</h3>
-                            <a href="https://wa.me/6285163006904?text=Halo%20Assalamualaikum,%20mohon%20informasi%20detail%20tentang%20PPDB" class="genric-btn primary radius">WhatsApp Business Helpdesk SMP Hang Tuah 6 Excellent</a>
-                            <a href="https://chat.whatsapp.com/JkUojZGuTKF8sZjyRqqRoI" class="genric-btn success radius">Join Group WhatsApp Informasi PPDB 2022/2023</a>
+                            <a href="https://wa.me/6285163006904?text=Halo%20Assalamualaikum,%20mohon%20informasi%20detail%20tentang%20PPDB" class="genric-btn primary radius">WA Business Helpdesk</a>
+                            <a href="https://chat.whatsapp.com/JkUojZGuTKF8sZjyRqqRoI" class="genric-btn success radius">Join Group WA Info PPDB 2022/2023</a>
+                            
                             <!-- <a href="#" class="genric-btn info radius">Info</a>
                             <a href="#" class="genric-btn warning radius">Warning</a>
                             <a href="#" class="genric-btn danger radius">Danger</a>

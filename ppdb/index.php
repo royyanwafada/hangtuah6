@@ -26,7 +26,7 @@
 <body>
     <header>
         <div class="header-area">
-            <div class="main-header ">
+            <!--<div class="main-header ">
                 <div class="header-top">
                     <div class="container">
                         <div class="row">
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
             <div class="header-bottom  header-sticky">
                 <div class="container">
                     <div class="d-flex align-items-center justify-content-between flex-wrap position-relative">
@@ -107,11 +107,18 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
-                    <img src="ppdb1.jpeg" alt=""></br></br>
-                        <img src="ppdb2.jpeg" alt="">
+                        <div class="col-12">
+                            <img width="100%" src="ppdb1.jpeg">
+                        </div>
+                        <div class="col-12">
+                        <img width="100%" src="ppdb2.jpeg">
+                        </div>
+                        <div class="col-12">
+                        <img width="100%" src="seragam2.jpg">
+                        </div>
                         <div class="about-img about-img1">
-                        <!-- <img src="../assets/img/gallery/about1.jpg" alt=""> -->
-                            
+                        <!-- <img src="../assets/img/gallery/about1.jpg" alt="">
+                             -->
                         </div>
                     
                 </div>

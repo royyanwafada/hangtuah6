@@ -5346,6 +5346,13 @@ del {
 .button-group-area .genric-btn:last-child {
   margin-right: 0;
 }
+@media (max-width: 425px) {
+.button-group-area div (
+display: flex;
+)
+
+}
+
 .genric-btn {
   display: inline-block;
   outline: none;

@@ -106,12 +106,12 @@
         <section class="about-area section-bg section-padding">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
+                    
                         <div class="col-12">
-                            <img width="100%" src="ppdb1.jpeg">
+                            <img width="100%" src="ppdb1.jpeg"> </br></br>
                         </div>
                         <div class="col-12">
-                        <img width="100%" src="ppdb2.jpeg">
+                        <img width="100%" src="ppdb2.jpeg"></br></br>
                         </div>
                         <div class="col-12">
                         <img width="100%" src="seragam2.jpg">

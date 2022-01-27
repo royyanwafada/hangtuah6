@@ -114,6 +114,9 @@
                         <img width="100%" src="ppdb2.jpeg"></br></br>
                         </div>
                         <div class="col-12">
+                        <img width="100%" src="alur.jpg"></br></br>
+                        </div>
+                        <div class="col-12">
                         <img width="100%" src="seragam2.jpg">
                         </div>
                         <div class="about-img about-img1">

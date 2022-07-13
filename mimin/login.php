@@ -121,9 +121,12 @@
   }
 </style>
 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../assets/js/prevent.js"></script>
+
 <div class="login-page">
   <div class="form">
-    <img src="../assets/img/logo/logobawah.png">
+    <a href="../"><img src="../assets/img/logo/logobawah.png"></a>
     <h2>HALAMAN LOGIN</h2></br>
     <form class="register-form">
       <input type="text" onkeyup="validHurufAngka(this)" placeholder="name" />
@@ -132,11 +135,20 @@
       <button>create</button>
       <p class="message">Already registered? <a href="#">Sign In</a></p>
     </form>
-    <form class="login-form">
-      <input type="text" onkeyup="validHurufAngka(this)" placeholder="username" />
-      <input type="password" onkeyup="validHurufAngka(this)" placeholder="password" />
-      <button>login</button>
-      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    <form class="login-form" method="post" action="login_check.php">
+      <input type="text" name="un" onkeyup="validHurufAngka(this)" placeholder="username" required="required" />
+      <input type="password" name="pwd" onkeyup="validHurufAngka(this)" placeholder="password" required="required" />
+      <button type="submit" name="submit">login</button>
+      <!--<p class="message">Not registered? <a href="#">Create an account</a></p>-->
+      <?php
+      if (isset($_GET['failed'])) {
+        echo '<script language="javascript">';
+        echo 'alert("Username atau Password salah")';
+        echo '</script>';
+        echo "<p class=\"message\" >Username atau Password anda salah,</br>Silahkan coba lagi</a></p>";
+      }
+
+      ?>
     </form>
   </div>
 </div>
@@ -149,12 +161,11 @@
     }, "slow");
   });
 </script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="../assets/js/prevent.js"></script>
 
 <?php
-
-
+//echo '<script language="javascript">';
+//echo 'alert("message successfully sent")';
+//echo '</script>';
 ?>
 
 

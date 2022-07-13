@@ -1,5 +1,7 @@
 <?php
 include "../assets/config/db.php";
+session_start();
+$user_id = $_SESSION['id_user'];
 if (!isset($_SESSION['id_user'])) {
   header('Location: login.php');
 }
@@ -71,18 +73,18 @@ if (!isset($_SESSION['id_user'])) {
         <!-- Notifications Dropdown Menu Line Code Here -->
 
         <!-- Button Fullscreen Line Code Here -->
-        <!-- <li class="nav-item">
-        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
-          <i class="fas fa-expand-arrows-alt"></i>
-        </a>
-      </li> -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
 
         <!-- Button Control Sidebar Line Code Here -->
-        <!-- <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li> -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+            <i class="fas fa-th-large"></i>
+          </a>
+        </li>
       </ul>
     </nav>
     <!-- /.navbar end -->
@@ -92,13 +94,12 @@ if (!isset($_SESSION['id_user'])) {
       <!-- Brand Logo -->
       <a href="index3.html" class="brand-link">
         <img src="../assets/img/icon/iconht6.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">SMP HT 6 EXCELLENT</span>
+        <span class="brand-text font-weight-light">Admin Website</span>
       </a>
 
       <!-- Sidebar -->
       <?php
-      $display_name = mysqli_query($koneksi, "select displayname from user where id_user = 'A02'");
-      $display_name2 = mysqli_fetch_array($display_name);
+      $display_name = mysqli_fetch_array(mysqli_query($koneksi, "select displayname from user where id_user = '$user_id'"));
       ?>
       <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
@@ -107,19 +108,9 @@ if (!isset($_SESSION['id_user'])) {
             <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="#" class="d-block"><?php echo $display_name2; ?></a>
-          </div>
-        </div>
+            <a href="#" class="d-block"><?php echo $display_name[0]; ?></a>
+            <a href="logout.php">Logout</a>
 
-        <!-- SidebarSearch Form -->
-        <div class="form-inline">
-          <div class="input-group" data-widget="sidebar-search">
-            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-            <div class="input-group-append">
-              <button class="btn btn-sidebar">
-                <i class="fas fa-search fa-fw"></i>
-              </button>
-            </div>
           </div>
         </div>
 
@@ -679,6 +670,13 @@ if (!isset($_SESSION['id_user'])) {
                 <p>Informational</p>
               </a>
             </li>
+            <!-- <li class="nav-header">AKUN</li>
+            <li class="nav-item">
+              <a href="logout.php" class="nav-link">
+                <i class="nav-icon far fa-log-out" aria-hidden="true"></i>
+                <p>Logout</p>
+              </a>
+            </li> -->
           </ul>
         </nav>
         <!-- /.sidebar-menu -->
@@ -703,7 +701,7 @@ if (!isset($_SESSION['id_user'])) {
       </div>
       <div class="tab-content">
         <div class="tab-empty">
-          <h2 class="display-4">Selamat Datang, Nama !</h2>
+          <h2 class="display-4">Selamat Datang, <?php echo $display_name[0]; ?> !</h2>
         </div>
         <div class="tab-loading">
           <div>

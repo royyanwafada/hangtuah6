@@ -125,15 +125,15 @@ if (!isset($_SESSION['id_user'])) {
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Ganti Informasi
+                <p>Media Sosial
                   <i class="right fas fa-angle-left"></i>
                 </p>
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="wa/" class="nav-link">
                     <i class="far ion-social-whatsapp nav-icon"></i>
-                    <p>WhatsApp</p>
+                    <p>WA Business</p>
                   </a>
                 </li>
                 <li class="nav-item">

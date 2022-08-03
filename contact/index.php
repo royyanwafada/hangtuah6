@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-<?php include "../bar.php";?>
+<?php include "../bar.php";
+include "../assets/config/db.php";
+?>
 
 <head>
     <meta charset="utf-8">
@@ -72,16 +74,16 @@
                         <!-- Logo -->
                         <div class="left-side d-flex align-items-center">
                             <?php echo $logoatas; ?>
-                        <!-- Main-menu -->
-                        <?php echo $menubar; ?>
-                        <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
+                            <!-- Main-menu -->
+                            <?php echo $menubar; ?>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
     <main>
         <!-- Hero area Start-->
@@ -97,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
         <!--  Hero area End -->
         <!-- Hero Area End-->
@@ -105,13 +107,13 @@
         <section class="contact-section">
             <div class="container">
                 <div class="d-sm-block mb-5 pb-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.7467901945092!2d112.76293561472333!3d-7.382248494673237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5ec6cd9ba47%3A0x2059ede1aac92a50!2sSMP%20Hang%20Tuah%206%20Excellent!5e0!3m2!1sid!2sid!4v1635568627901!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.7467901945092!2d112.76293561472333!3d-7.382248494673237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5ec6cd9ba47%3A0x2059ede1aac92a50!2sSMP%20Hang%20Tuah%206%20Excellent!5e0!3m2!1sid!2sid!4v1635568627901!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     <div class="button-group-area mt-40">
                         <h3 class="text-heading">Informasi lebih lanjut, anda dapat menghubungi kami melalui:</h3>
-                            <a href="https://wa.me/6285163006904?text=Halo%20Assalamualaikum,%20mohon%20informasi%20detail%20tentang%20PPDB" class="genric-btn primary radius">WA Business Helpdesk</a>
-                            <a href="https://chat.whatsapp.com/JkUojZGuTKF8sZjyRqqRoI" class="genric-btn success radius">Join Group WA Info PPDB 2022/2023</a>
-                            
-                            <!-- <a href="#" class="genric-btn info radius">Info</a>
+                        <a href="https://wa.me/<?php echo $wa[0]; ?>?text=Halo%20Assalamualaikum,%20mohon%20informasi%20detail%20tentang%20PPDB" class="genric-btn primary radius">WA Business Helpdesk</a>
+                        <a href="https://chat.whatsapp.com/JkUojZGuTKF8sZjyRqqRoI" class="genric-btn success radius">Join Group WA Info PPDB 2022/2023</a>
+
+                        <!-- <a href="#" class="genric-btn info radius">Info</a>
                             <a href="#" class="genric-btn warning radius">Warning</a>
                             <a href="#" class="genric-btn danger radius">Danger</a>
                             <a href="#" class="genric-btn link radius">Link</a>
@@ -123,37 +125,26 @@
                         <h2 class="contact-title">Get in Touch</h2>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form"
-                            action="https://preview.colorlib.com/theme/universityedu/contact_process.php" method="post"
-                            id="contactForm" novalidate>
+                        <form class="form-contact contact_form" action="https://preview.colorlib.com/theme/universityedu/contact_process.php" method="post" id="contactForm" novalidate>
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30"
-                                            rows="9" onfocus="this.placeholder = ''"
-                                            onblur="this.placeholder = 'Enter Message'"
-                                            placeholder=" Enter Message"></textarea>
+                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="name" id="name" type="text"
-                                            onfocus="this.placeholder = ''"
-                                            onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email"
-                                            onfocus="this.placeholder = ''"
-                                            onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="subject" id="subject" type="text"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
-                                            placeholder="Enter Subject">
+                                        <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
                                     </div>
                                 </div>
                             </div>
@@ -192,41 +183,42 @@
         </section>
         <!-- Contact Area End -->
     </main>
-    <?php echo $footer;?>
-<!-- Scroll Up -->
-<div id="back-top" >
-    <a title="Go to Top" href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
-</div>
+    <?php echo $footer; ?>
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+    </div>
 
-<!-- JS here -->
-<!-- Jquery, Popper, Bootstrap -->
-<script src="../assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="../assets/js/popper.min.js"></script>
-<script src="../assets/js/bootstrap.min.js"></script>
+    <!-- JS here -->
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="../assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
 
-<!-- Slick-slider , Owl-Carousel ,slick-nav , Counter-->
-<script src="../assets/js/owl.carousel.min.js"></script>
-<script src="../assets/js/slick.min.js"></script>
-<script src="../assets/js/jquery.slicknav.min.js"></script>
-<script src="../assets/js/countdown.min.js"></script>
+    <!-- Slick-slider , Owl-Carousel ,slick-nav , Counter-->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/jquery.slicknav.min.js"></script>
+    <script src="../assets/js/countdown.min.js"></script>
 
-<!--wow , counter , waypoint, Nice-select -->
-<script src="../assets/js/wow.min.js"></script>
-<script src="../assets/js/jquery.magnific-popup.js"></script>
-<script src="../assets/js/jquery.nice-select.min.js"></script>
-<script src="../assets/js/jquery.counterup.min.js"></script>
-<script src="../assets/js/waypoints.min.js"></script>
+    <!--wow , counter , waypoint, Nice-select -->
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/jquery.magnific-popup.js"></script>
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/jquery.counterup.min.js"></script>
+    <script src="../assets/js/waypoints.min.js"></script>
 
-<!-- contact js -->
-<script src="../assets/js/contact.js"></script>
-<script src="../assets/js/jquery.form.js"></script>
-<script src="../assets/js/jquery.validate.min.js"></script>
-<script src="../assets/js/mail-script.js"></script>
-<script src="../assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- contact js -->
+    <script src="../assets/js/contact.js"></script>
+    <script src="../assets/js/jquery.form.js"></script>
+    <script src="../assets/js/jquery.validate.min.js"></script>
+    <script src="../assets/js/mail-script.js"></script>
+    <script src="../assets/js/jquery.ajaxchimp.min.js"></script>
 
-<!--  Plugins, main-Jquery -->	
-<script src="../assets/js/plugins.js"></script>
-<script src="../assets/js/main.js"></script>
+    <!--  Plugins, main-Jquery -->
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
+
 </html>

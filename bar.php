@@ -1,10 +1,17 @@
 <?php
+include "assets/config/db.php";
+
+$query = mysqli_query($koneksi, "select component from sosial_media where id='WA'");
+$wa = mysqli_fetch_array($query);
+
+
+
 $domain = "http://localhost/hangtuah6/";
 
-$icon = "<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"".$domain."assets/img/icon/iconht6.png\">";
+$icon = "<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"" . $domain . "assets/img/icon/iconht6.png\">";
 
-$countdown = 
-"
+$countdown =
+    "
 <div class=\"main-header \">
     <div class=\"header-top\">
         <div class=\"container\">
@@ -51,16 +58,16 @@ $head = "
 <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">
 <meta name=\"description\" content=\"\">
 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
-<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"".$domain."assets/img/icon/ht6.png\">
-<link rel=\"stylesheet\" href=\"".$domain."assets/css/bootstrap.min.css%2bowl.carousel.min.css%2bslicknav.css%2banimate.min.css%2bmagnific-popup.css%2bfontawesome-all.min.css%2bthemify-icons.css%2bslick.css%2bnice-select.css.pagespeed\" />
-<link rel=\"stylesheet\" href=\"".$domain."assets/css/A.style.css.pagespeed.cf.ihVIXitPqH.css\">
-<link rel=\"stylesheet\" href=\"".$domain."assets/css/app.css\">
+<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"" . $domain . "assets/img/icon/ht6.png\">
+<link rel=\"stylesheet\" href=\"" . $domain . "assets/css/bootstrap.min.css%2bowl.carousel.min.css%2bslicknav.css%2banimate.min.css%2bmagnific-popup.css%2bfontawesome-all.min.css%2bthemify-icons.css%2bslick.css%2bnice-select.css.pagespeed\" />
+<link rel=\"stylesheet\" href=\"" . $domain . "assets/css/A.style.css.pagespeed.cf.ihVIXitPqH.css\">
+<link rel=\"stylesheet\" href=\"" . $domain . "assets/css/app.css\">
 ";
 
 
 $logoatas = "
 <div class=\"logo\">
-    <a href=\"".$domain."index.php\"><img src=\"".$domain."assets/img/logo/logoht6.png\" alt=\"\"></a>
+    <a href=\"" . $domain . "index.php\"><img src=\"" . $domain . "assets/img/logo/logoht6.png\" alt=\"\"></a>
 </div>
 ";
 
@@ -68,11 +75,11 @@ $menubar = "
     <div class=\"main-menu d-none d-lg-block\">
         <nav>
             <ul id=\"navigation\">
-                <li><a href=\"".$domain."\">Home</a></li>
+                <li><a href=\"" . $domain . "\">Home</a></li>
                 <li><a href=\"#\">About Us</a>
                     <ul class=\"submenu\">
-                        <li><a href=\"".$domain."profil/\">Visi, Misi & Sejarah</a></li>
-                        <li><a href=\"".$domain."guru-staff/\">Teachers and Staff</a></li>
+                        <li><a href=\"" . $domain . "profil/\">Visi, Misi & Sejarah</a></li>
+                        <li><a href=\"" . $domain . "guru-staff/\">Teachers and Staff</a></li>
                     </ul>
                 </li>
                 <li><a href=\"#\">Student</a>
@@ -88,15 +95,15 @@ $menubar = "
                         <li><a href=\"#\">E-learning</a></li>
                         <li><a href=\"#\">E-library</a></li>
                     </ul>
-                <li><a href=\"".$domain."ppdb/\">PPDB</a></li>
+                <li><a href=\"" . $domain . "ppdb/\">PPDB</a></li>
                 <li><a href=\"contact.html\">Gallery</a></li>
-                <li><a href=\"".$domain."contact/\">Contact</a></li>
+                <li><a href=\"" . $domain . "contact/\">Contact</a></li>
             </ul>
         </nav>
     </div>
 </div>
 <div class=\"header-right-btn d-flex f-right align-items-center\">
-    <a href=\"https://wa.me/6285163006904?text=Halo%20Assalamualaikum\" class=\"header-btn2 d-none d-xl-inline-block\">WA:<span> +62851-6300-6904</span></a>
+    <a href=\"https://wa.me/" . $wa[0] . "?text=Halo\" class=\"header-btn2 d-none d-xl-inline-block\">WA:<span> +" . $wa[0] . "</span></a>
     <!--<ul class=\"header-social d-none d-sm-block\">
         <li><a href=\"https://www.facebook.com/smphangtuah6excellent/\"><i class=\"fab fa-facebook-square\"></i></a></li>
         <li><a href=\"https://twitter.com/smphangtuah6exc\"><i class=\"fab fa-twitter-square\"></i></a></li>
@@ -107,8 +114,8 @@ $menubar = "
 </div>
 ";
 
-$footer = 
-"
+$footer =
+    "
 <footer>
         <div class=\"footer-wrapper gray-bg\">
             <div class=\"footer-area footer-padding\">
@@ -118,7 +125,7 @@ $footer =
                             <div class=\"single-footer-caption mb-50\">
                                 <div class=\"single-footer-caption mb-20\">
                                     <div class=\"footer-logo mb-35\">
-                                        <a href=\"index.html\"><img height=100% width=210px src=\"".$domain."assets/img/logo/logobawah.png\" alt=\"\"></a>
+                                        <a href=\"index.html\"><img height=100% width=210px src=\"" . $domain . "assets/img/logo/logobawah.png\" alt=\"\"></a>
                                     </div>
                                 </div>
                             </div>
@@ -129,7 +136,7 @@ $footer =
                                     <h4>SMP Hangtuah 6 Excellent Juanda Sidoarjo</h4>
                                     <p>Jalan Raya Ir. H.Juanda No.9, Dukuh, Sedati Agung, Kec. Sedati, Kabupaten Sidoarjo, Jawa Timur 61253.</p>
                                     <a href=\"tel:+623199681417\">Telepon: (031) 99681417</a></br>
-                                    <a href=\"https://wa.me/6285163006904?text=Halo%20Assalamualaikum\">WhatsApp: +62851-6300-6904
+                                    <a href=\"https://wa.me/" . $wa[0] . "?text=Halo\">WhatsApp: +" . $wa[0] . "
                                 </div>
 
                                 <!--<div class=\"footer-form mb-20\">
@@ -225,7 +232,3 @@ $footer =
     </footer>
 
 ";
-
-
-
-?>

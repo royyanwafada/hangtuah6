@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-<?php include "../bar.php";?>
+<?php include "../bar.php"; ?>
 
 <head>
     <meta charset="utf-8">
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-<header>
+    <header>
         <div class="header-area">
             <!-- <div class="main-header ">
                 <div class="header-top">
@@ -73,17 +73,17 @@
                     <div class="d-flex align-items-center justify-content-between flex-wrap position-relative">
                         <!-- Logo -->
                         <div class="left-side d-flex align-items-center">
-                            <?php echo $logoatas;?>
+                            <?php echo $logoatas; ?>
                             <!-- Main-menu -->
-                            <?php echo $menubar;?>
-                        <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
+                            <?php echo $menubar; ?>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
     <main>
 
@@ -130,7 +130,8 @@
                                 <!-- <a href="#" class="browse-btn">Learn More</a> -->
                             </div>
                         </div>
-                    </div><div class="col-lg-6 col-md-6">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
                         <div class="single-blogs mb-30">
                             <div class="blog-img">
                                 <img src="../assets/img/gallery/kelaskosong.jpg" alt="">
@@ -194,10 +195,11 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
+    </main>
 
     <?php echo $footer; ?>
     <!-- Scroll Up -->
@@ -237,4 +239,5 @@
     <script src="../assets/js/main.js"></script>
 
 </body>
+
 </html>

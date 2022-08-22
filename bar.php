@@ -84,6 +84,7 @@ $menubar = "
                 </li>
                 <li><a href=\"#\">Student</a>
                     <ul class=\"submenu\">
+                        <li><a href=\"" . $domain . "article/\">News & Article</a></li>
                         <li><a href=\"#\">OSIS</a></li>
                         <li><a href=\"#\">Extracurricular</a></li>
                         <li><a href=\"#\">Profil Alumni</a></li>
@@ -91,7 +92,7 @@ $menubar = "
                 </li>
                 <li><a href=\"#\">Facilities</a>
                     <ul class=\"submenu\">
-                        <li><a href=\"#\">Infrastructure</a></li>
+                        <li><a href=\"" . $domain . "infrastructure/\">Infrastructure</a></li>
                         <li><a href=\"#\">E-learning</a></li>
                         <li><a href=\"#\">E-library</a></li>
                     </ul>

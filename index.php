@@ -1,13 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-<?php include "bar.php";?>
+<?php include "bar.php"; ?>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>SMP Hang Tuah 6 Excellent</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <?php echo $icon; ?>
 
     <!-- CSS here -->
@@ -72,16 +73,16 @@
                         <!-- Logo -->
                         <div class="left-side d-flex align-items-center">
                             <?php echo $logoatas; ?>
-                        <!-- Main-menu -->
-                        <?php echo $menubar; ?>
-                        <!-- Mobile Menu -->
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
+                            <!-- Main-menu -->
+                            <?php echo $menubar; ?>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
     <main>
         <!--? slider Area S t a r t-->
@@ -93,14 +94,12 @@
                         <div class="row">
                             <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-10 col-sm-12">
                                 <div class="hero-caption">
-                                    <span data-animation="fadeInUp" data-delay=".2s" class
-                                        style="animation-delay: 0.2s;">SMP HANG TUAH 6 EXCELLENT</span>
+                                    <span data-animation="fadeInUp" data-delay=".2s" class style="animation-delay: 0.2s;">SMP HANG TUAH 6 EXCELLENT</span>
                                     <h1 data-animation="fadeInUp" data-delay=".2s" class style="animation-delay: 0.2s;">
                                         Be Wise, Be Smart, Be Excellent</h1>
                                     <P data-animation="fadeInUp" data-delay=".4s" class style="animation-delay: 0.2s;">
                                         Your Excellenct Future Begins Here!</P>
-                                    <a href="#ppdb" class="btn_1 hero-btn" data-animation="fadeInUp" data-delay=".8s"
-                                        style="animation-delay: 0.2s;" >Join Now!</a>
+                                    <a href="#ppdb" class="btn_1 hero-btn" data-animation="fadeInUp" data-delay=".8s" style="animation-delay: 0.2s;">Join Now!</a>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +107,7 @@
                 </div>
             </div>
         </section>
-        
+
 
         <!-- slider Area E n d-->
         <!--? About Area  01-->
@@ -126,9 +125,9 @@
 
                             <div class="section-tittle m-0">
                                 <h2>Sambutan kepala sekolah</h2>
-                                <p class="mb-30">Assalamu’alaikum warahmatullah wabarakatuh. Dengan rahmat Allah Subhanahu wa ta’ala. Kami mengucapkan selamat datang di website SMP Hang Tuah 6 Excellent Juanda. Besar harapan kami semoga website ini bermanfaat untuk memberi informasi tentang sekolah bagi siswa, guru, orang tua maupun masyarakat luas, memberi ruang untuk menyampaikan kegiatan-kegiatan sekolah, dan memotivasi untuk pengembangan sekolah. Kami akan berupaya untuk ikut mencerdaskan kehidupan bangsa dengan baik dalam rangka menyongsong era digital bagi anak-anak kita dan menjadikannya generasi islami yang berakhlak mulia, lulusan yang berkarakter, religius, menguasai IPTEK, berprestasi, berwawasan kemaritiman, berbudaya lingkungan, dan mampu bersaing di tingkat internasional.</p>
+                                <p class="mb-30" align="justify">Assalamu’alaikum warahmatullah wabarakatuh. Dengan rahmat Allah Subhanahu wa ta’ala. Kami mengucapkan selamat datang di website SMP Hang Tuah 6 Excellent Juanda. Besar harapan kami semoga website ini bermanfaat untuk memberi informasi tentang sekolah bagi siswa, guru, orang tua maupun masyarakat luas, memberi ruang untuk menyampaikan kegiatan-kegiatan sekolah, dan memotivasi untuk pengembangan sekolah. Kami akan berupaya untuk ikut mencerdaskan kehidupan bangsa dengan baik dalam rangka menyongsong era digital bagi anak-anak kita dan menjadikannya generasi islami yang berakhlak mulia, lulusan yang berkarakter, religius, menguasai IPTEK, berprestasi, berwawasan kemaritiman, berbudaya lingkungan, dan mampu bersaing di tingkat internasional.</p>
 
-                                <p>Irra Fatukawati, S.Si., M.Si. - Kepala Sekolah SMP Hang Tuah 6 Excellent Juanda.</p>
+                                <p align="justify">Irra Fatukawati, S.Si., M.Si. <br>Kepala Sekolah SMP Hang Tuah 6 Excellent Juanda</p>
                                 <!--<a href="#" class="browse-btn mt-20">Learn More</a>-->
                             </div>
                         </div>
@@ -148,6 +147,7 @@
                             <!-- <p>Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer
                                 efficitur tellus metus, sed feugiat leo posuere ac. Morbi vitae tincidunt mi, et
                                 malesuada massa.</p> -->
+
                         </div>
                     </div>
                 </div>
@@ -159,8 +159,8 @@
                             </div>
                             <div class="blog-caption">
                                 <h3><a href="#">Ketua Pembina Yayasan Hang Tuah Apresiasi Siswa Pembawa Acara 4 Bahasa</a></h3>
-                                <p>Pembawa acara empat bahasa oleh siswa SMP Hang Tuah 6 Excellent mendapat apresiasi Ketua Pembina Yayasan Hang Tuah Ibu Vero Yudo Margono. Apresiasi disampaikan secara...</p>
-                                <a href="#" class="browse-btn">Learn More</a>
+                                <p>Pembawa acara empat bahasa oleh siswa SMP Hang Tuah 6 Excellent mendapat apresiasi Ketua Pembina Yayasan Hang Tuah Ibu Vero Yudo Margono. Apresiasi disampaikan secara... </p>
+                                <a href="#" class="browse-btn">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -172,11 +172,12 @@
                             <div class="blog-caption">
                                 <h3><a href="#">SMP Hang Tuah 6 Excellent Juanda Sukses Selenggarakan ANBK 2021</a></h3>
                                 <p>Sebanyak 45 siswa SMP Hang Tuah 6 Excellent Juanda Sidoarjo mengikuti Asesmen Nasional Berbasis Komputer (ANBK) 2021 selama dua hari, (4-5/10). Pelaksanaan ANBK dihadiri...</p>
-                                <a href="#" class="browse-btn">Learn More</a>
+                                <a href="#" class="browse-btn">Read More</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a href="../hangtuah6/article" class="browse-btn mb-20">More News & Article</a>
             </div>
         </section>
         <!-- Services Ara E n d -->
@@ -194,7 +195,7 @@
                         <div class="thumb-content">
                             <div class="capt">
                                 <h3>Informasi Detail</h3>
-                                <p>Mengenai persyaratan dan jadwal pendaftaran.</p>
+                                <p>Mengenai persyaratan dan jadwal pendaftaran</p>
                             </div>
                             <a href="ppdb/index.php"><i class="ti-angle-right"></i></a>
                         </div>
@@ -206,7 +207,7 @@
                         <div class="thumb-content">
                             <div class="capt">
                                 <h3>Download Brosur</h3>
-                                <p>Untuk informasi Penerimaan Peserta Didik Baru dalam bentuk brosur</p>
+                                <p>Untuk informasi detail dalam bentuk brosur</p>
                             </div>
                             <a href="ppdb/brosur.html"><i class="ti-angle-right"></i></a>
                         </div>
@@ -218,7 +219,7 @@
                         <div class="thumb-content">
                             <div class="capt">
                                 <h3>Formulir Pendaftaran Online</h3>
-                                <p>Isi Formulir Pendaftaran disini</p>
+                                <p>Klik disini</p>
                             </div>
                             <a href="https://bit.ly/e-formppdbsmpht6exc22-23"><i class="ti-angle-right"></i></a>
                         </div>
@@ -306,7 +307,7 @@
                             </div>
                             <div class="single-brand">
                                 <img src="assets/img/gallery/brand3.png" alt="">
-                            </div>-->                            
+                            </div>-->
                             <div class="single-brand" style="height: 150px; display:flex; justify-content:center; margin-left:0.5rem; margin-right:0.5rem">
                                 <img style="max-width:100%; max-height:100%; margin:auto;" src="assets/img/partner/bumida.png" alt="">
                             </div>
@@ -363,7 +364,7 @@
     </main>
 
     <?php echo $footer; ?>
-    
+
     <!-- Scroll Up -->
     <div id="back-top">
         <a title="Go to Top" href="#"><i class="fas fa-long-arrow-alt-up"></i></a>

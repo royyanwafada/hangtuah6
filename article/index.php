@@ -1,15 +1,17 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-<?php include "../bar.php"; ?>
+<?php include "../bar.php";
+//include "article_loader.php"; 
+?>
 
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Education | Template</title>
+    <title>News & Article | SMP Hang Tuah 6 Excellent</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/favicon.png">
+    <?php echo $icon; ?>
 
     <!-- CSS here -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -39,7 +41,7 @@
                                         </ul>
                                     </div>
                                     <div class="header-info-right d-flex align-items-center">
-                                        
+
                                         <div class="cd-timer" id="countdown">
                                             <div class="cd-item">
                                                 <span>40</span>
@@ -58,7 +60,7 @@
                                                 <p>Seconds</p>
                                             </div>
                                         </div>
-                                        
+
                                         <a href="#" class="browse-btn browse-btn2 ml-40 d-none d-sm-block">Learn More</a>
                                     </div>
                                 </div>
@@ -106,27 +108,36 @@
                 <div class="row">
                     <div class="col-lg-8 mb-5 mb-lg-0">
                         <div class="blog_left_sidebar">
-                            <article class="blog_item">
-                                <div class="blog_item_img">
-                                    <img class="card-img rounded-0" src="../assets/img/blog/single_blog_1.jpg" alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
-                                    </a>
-                                </div>
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                            <article class="blog_item">
+
+                            <?php
+                            include "../assets/config/db.php";
+                            $query = mysqli_query($koneksi, "select * from artikel order by datetime DESC");
+                            while ($artikel = mysqli_fetch_array($query)) {
+                            ?>
+
+                                <article class="blog_item">
+                                    <div class="blog_item_img">
+                                        <img class="card-img rounded-0" src="<?php echo $artikel[3]; ?>" alt="">
+                                        <a href="#" class="blog_item_date">
+                                            <h3>15</h3>
+                                            <p>Jan</p>
+                                        </a>
+                                    </div>
+                                    <div class="blog_details">
+                                        <a class="d-inline-block" href="blog_details.html">
+                                            <h2 class="blog-head" style="color: #2d2d2d;"><?php echo $artikel[1]; ?></h2>
+                                        </a>
+                                        <p></p>
+                                        <ul class="blog-info-link">
+                                            <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                            <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                            <?php } ?>
+
+                            <!-- <article class="blog_item">
                                 <div class="blog_item_img">
                                     <img class="card-img rounded-0" src="../assets/img/blog/single_blog_2.jpg" alt="">
                                     <a href="#" class="blog_item_date">
@@ -145,8 +156,8 @@
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
                                 </div>
-                            </article>
-                            <article class="blog_item">
+                            </article> -->
+                            <!-- <article class="blog_item">
                                 <div class="blog_item_img">
                                     <img class="card-img rounded-0" src="../assets/img/blog/single_blog_3.jpg" alt="">
                                     <a href="#" class="blog_item_date">
@@ -165,8 +176,8 @@
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
                                 </div>
-                            </article>
-                            <article class="blog_item">
+                            </article> -->
+                            <!-- <article class="blog_item">
                                 <div class="blog_item_img">
                                     <img class="card-img rounded-0" src="../assets/img/blog/single_blog_4.jpg" alt="">
                                     <a href="#" class="blog_item_date">
@@ -185,8 +196,8 @@
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
                                 </div>
-                            </article>
-                            <article class="blog_item">
+                            </article> -->
+                            <!-- <article class="blog_item">
                                 <div class="blog_item_img">
                                     <img class="card-img rounded-0" src="../assets/img/blog/single_blog_5.jpg" alt="">
                                     <a href="#" class="blog_item_date">
@@ -205,7 +216,7 @@
                                         <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
                                     </ul>
                                 </div>
-                            </article>
+                            </article> -->
                             <nav class="blog-pagination justify-content-center d-flex">
                                 <ul class="pagination">
                                     <li class="page-item">

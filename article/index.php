@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 <?php include "../bar.php";
-//include "article_loader.php"; 
 ?>
 
 
@@ -110,24 +109,27 @@
                         <div class="blog_left_sidebar">
 
                             <?php
-                            include "../assets/config/db.php";
+                            //include "../assets/config/db.php";
                             $query = mysqli_query($koneksi, "select * from artikel order by datetime DESC");
+                            $c = 1;
                             while ($artikel = mysqli_fetch_array($query)) {
                             ?>
 
                                 <article class="blog_item">
                                     <div class="blog_item_img">
-                                        <img class="card-img rounded-0" src="<?php echo $artikel[3]; ?>" alt="">
+                                        <img class="card-img rounded-0" src="<?php echo $artikel[3]; $recent_post[$c][2] = $artikel[3]; ?>" alt="">
                                         <a href="#" class="blog_item_date">
-                                            <h3>15</h3>
-                                            <p>Jan</p>
+                                            <h3><?php echo date_format(date_create($artikel[2]), "d"); $recent_post[$c][0] = $artikel[2]; ?></h3>
+                                            <p><?php echo date_format(date_create($artikel[2]), "M"); ?></p>
                                         </a>
                                     </div>
                                     <div class="blog_details">
-                                        <a class="d-inline-block" href="blog_details.html">
-                                            <h2 class="blog-head" style="color: #2d2d2d;"><?php echo $artikel[1]; ?></h2>
+                                        <a class="d-inline-block" href="detail.php?id=<?php echo $artikel[0];?>">
+                                            <h2 class="blog-head" style="color: #2d2d2d;">
+                                                <?php echo $artikel[1];
+                                                $recent_post[$c][1] = $artikel[1]; ?></h2>
                                         </a>
-                                        <p></p>
+                                        <p><?php echo $artikel[5]; ?></p>
                                         <ul class="blog-info-link">
                                             <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
                                             <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
@@ -135,87 +137,9 @@
                                     </div>
                                 </article>
 
-                            <?php } ?>
+                            <?php $c = $c + 1;
+                            } ?>
 
-                            <!-- <article class="blog_item">
-                                <div class="blog_item_img">
-                                    <img class="card-img rounded-0" src="../assets/img/blog/single_blog_2.jpg" alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
-                                    </a>
-                                </div>
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
-                            </article> -->
-                            <!-- <article class="blog_item">
-                                <div class="blog_item_img">
-                                    <img class="card-img rounded-0" src="../assets/img/blog/single_blog_3.jpg" alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
-                                    </a>
-                                </div>
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
-                            </article> -->
-                            <!-- <article class="blog_item">
-                                <div class="blog_item_img">
-                                    <img class="card-img rounded-0" src="../assets/img/blog/single_blog_4.jpg" alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
-                                    </a>
-                                </div>
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
-                            </article> -->
-                            <!-- <article class="blog_item">
-                                <div class="blog_item_img">
-                                    <img class="card-img rounded-0" src="../assets/img/blog/single_blog_5.jpg" alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
-                                    </a>
-                                </div>
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
                             </article> -->
                             <nav class="blog-pagination justify-content-center d-flex">
                                 <ul class="pagination">
@@ -296,42 +220,19 @@
                             </aside>
                             <aside class="single_sidebar_widget popular_post_widget">
                                 <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
-                                <div class="media post_item">
-                                    <img src="../assets/img/post/post_1.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">From life was you fish...</h3>
-                                        </a>
-                                        <p>January 12, 2019</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="../assets/img/post/post_2.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">The Amazing Hubble</h3>
-                                        </a>
-                                        <p>02 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="../assets/img/post/post_3.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">Astronomy Or Astrology</h3>
-                                        </a>
-                                        <p>03 Hours ago</p>
-                                    </div>
-                                </div>
-                                <div class="media post_item">
-                                    <img src="../assets/img/post/post_4.jpg" alt="post">
-                                    <div class="media-body">
-                                        <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">Asteroids telescope</h3>
-                                        </a>
-                                        <p>01 Hours ago</p>
-                                    </div>
-                                </div>
+                                <?php //get data from mysqli fetch array article and insert to array
+                                for ($i = 1; $i < $c; $i++) {
+                                ?>
+                                    <div class="media post_item">
+                                        <img src="<?php echo $recent_post[$i][2]; ?>" alt="post" width="80" height="75">
+                                        <div class="media-body">
+                                            <a href="blog_details.html">
+                                                <h3 style="color: #2d2d2d;"><?php echo $recent_post[$i][1]; ?></h3>
+                                            </a>
+                                            <p><?php echo date_format(date_create($recent_post[$i][0]), "d-M-Y H:i") ?></p>
+                                        </div>
+                                    </div> <?php } ?>
+
                             </aside>
                             <!-- <aside class="single_sidebar_widget tag_cloud_widget">
                                 <h4 class="widget_title" style="color: #2d2d2d;">Tag Clouds</h4>

@@ -152,7 +152,24 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6">
+                    <?php
+                    $query = mysqli_query($koneksi, "select * from artikel order by datetime DESC LIMIT 2");
+                    while ($artikel = mysqli_fetch_array($query)) {
+                    ?>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="single-blogs mb-30">
+                                <div class="blog-img">
+                                    <img src="assets/<?php echo $artikel[3]; ?>" alt="">
+                                </div>
+                                <div class="blog-caption">
+                                    <h3><a href="#"><?php echo $artikel[1]; ?></a></h3>
+                                    <p><?php echo $artikel[5]; ?>....</p>
+                                    <a href="article/detail.php" class="browse-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div> <?php } ?>
+
+                    <!-- <div class="col-lg-6 col-md-6">
                         <div class="single-blogs mb-30">
                             <div class="blog-img">
                                 <img src="assets/img/post/sambut.jpeg" alt="">
@@ -175,7 +192,7 @@
                                 <a href="#" class="browse-btn">Read More</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <a href="../hangtuah6/article" class="browse-btn mb-20">More News & Article</a>
             </div>

@@ -84,7 +84,7 @@ $menubar = "
                 </li>
                 <li><a href=\"#\">Student</a>
                     <ul class=\"submenu\">
-                        <li><a href=\"" . $domain . "infrastructure/\">News & Article</a></li>
+                        <li><a href=\"" . $domain . "article/\">News & Article</a></li>
                         <li><a href=\"#\">OSIS</a></li>
                         <li><a href=\"#\">Extracurricular</a></li>
                         <li><a href=\"#\">Profil Alumni</a></li>

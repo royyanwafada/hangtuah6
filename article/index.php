@@ -117,22 +117,24 @@
 
                                 <article class="blog_item">
                                     <div class="blog_item_img">
-                                        <img class="card-img rounded-0" src="<?php echo $artikel[3]; $recent_post[$c][2] = $artikel[3]; ?>" alt="">
+                                        <img class="card-img rounded-0" src="<?php echo $artikel[3];
+                                                                                $recent_post[$c][2] = $artikel[3]; ?>" alt="">
                                         <a href="#" class="blog_item_date">
-                                            <h3><?php echo date_format(date_create($artikel[2]), "d"); $recent_post[$c][0] = $artikel[2]; ?></h3>
+                                            <h3><?php echo date_format(date_create($artikel[2]), "d");
+                                                $recent_post[$c][0] = $artikel[2]; ?></h3>
                                             <p><?php echo date_format(date_create($artikel[2]), "M"); ?></p>
                                         </a>
                                     </div>
                                     <div class="blog_details">
-                                        <a class="d-inline-block" href="detail.php?id=<?php echo $artikel[0];?>">
+                                        <a class="d-inline-block" href="detail.php?id=<?php echo $artikel[0]; ?>">
                                             <h2 class="blog-head" style="color: #2d2d2d;">
                                                 <?php echo $artikel[1];
                                                 $recent_post[$c][1] = $artikel[1]; ?></h2>
                                         </a>
                                         <p><?php echo $artikel[5]; ?></p>
                                         <ul class="blog-info-link">
-                                            <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                            <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                            <li><a href="#"><i class="fa fa-user"></i><?php echo $artikel[9]; ?></a></li>
+                                            <li><a href="#"><i class="fa fa-comments"></i> 0 Comments</a></li>
                                         </ul>
                                     </div>
                                 </article>
@@ -179,43 +181,19 @@
                             </aside>
                             <aside class="single_sidebar_widget post_category_widget">
                                 <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
+
                                 <ul class="list cat-list">
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Resaurant food</p>
-                                            <p>(37)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Travel news</p>
-                                            <p>(10)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Modern technology</p>
-                                            <p>(03)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Product</p>
-                                            <p>(11)</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Inspiration</p>
-                                            <p>21</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Health Care (21)</p>
-                                            <p>09</p>
-                                        </a>
-                                    </li>
+                                    <?php
+                                    $query2 = mysqli_query($koneksi, "select tag, count(*) tag from artikel group by tag");
+                                    while ($artikel2 = mysqli_fetch_array($query2)) {
+                                    ?>
+                                        <li>
+                                            <a href="#" class="d-flex">
+                                                <p><?php echo $artikel2[0]; ?></p>
+                                                <p>(<?php echo $artikel2[1]; ?>)</p>
+                                            </a>
+                                        </li>
+                                    <?php } ?>
                                 </ul>
                             </aside>
                             <aside class="single_sidebar_widget popular_post_widget">
@@ -229,40 +207,11 @@
                                             <a href="blog_details.html">
                                                 <h3 style="color: #2d2d2d;"><?php echo $recent_post[$i][1]; ?></h3>
                                             </a>
-                                            <p><?php echo date_format(date_create($recent_post[$i][0]), "d-M-Y H:i") ?></p>
+                                            <p><?php echo date_format(date_create($recent_post[$i][0]), "d-M-Y H:i"); ?></p>
                                         </div>
                                     </div> <?php } ?>
 
                             </aside>
-                            <!-- <aside class="single_sidebar_widget tag_cloud_widget">
-                                <h4 class="widget_title" style="color: #2d2d2d;">Tag Clouds</h4>
-                                <ul class="list">
-                                    <li>
-                                        <a href="#">project</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">love</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">technology</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">travel</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">restaurant</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">life style</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">design</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">illustration</a>
-                                    </li>
-                                </ul>
-                            </aside> -->
 
                             <aside class="single_sidebar_widget instagram_feeds">
                                 <h4 class="widget_title" style="color: #2d2d2d;">Gallery Feeds</h4>

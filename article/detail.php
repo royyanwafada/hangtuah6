@@ -2,6 +2,10 @@
 <html class="no-js" lang="zxx">
 <?php include "../bar.php";
 $id_artikel = $_GET['id'];
+if (!isset($_GET['id'])) {
+  header('Location: index.php');
+}
+
 ?>
 
 
@@ -80,7 +84,7 @@ $id_artikel = $_GET['id'];
                   </h2>
                   <ul class="blog-info-link mt-3 mb-4">
                     <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                    <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                    <li><a href="#"><i class="fa fa-comments"></i> 0 Comments</a></li>
                   </ul>
                   <p class="excert">
                     <?php echo $artikel[4]; ?>
@@ -101,7 +105,7 @@ $id_artikel = $_GET['id'];
                   </p>
                 </div>
             </div> <?php } ?>
-          <div class="navigation-top">
+          <!-- <div class="navigation-top">
             <div class="d-sm-flex justify-content-between text-center">
               <p class="like-info"><span class="align-middle"><i class="fa fa-heart"></i></span> Lily and 4
                 people like this</p>
@@ -154,9 +158,9 @@ $id_artikel = $_GET['id'];
                 </div>
               </div>
             </div>
-          </div>
-          <div class="comments-area">
-            <h4>05 Comments</h4>
+          </div> -->
+          <!-- <div class="comments-area">
+            <h4>0 Comments</h4>
             <div class="comment-list">
               <div class="single-comment justify-content-between d-flex">
                 <div class="user justify-content-between d-flex">
@@ -235,8 +239,8 @@ $id_artikel = $_GET['id'];
                 </div>
               </div>
             </div>
-          </div>
-          <div class="comment-form">
+          </div> -->
+          <!-- <div class="comment-form">
             <h4>Leave a Reply</h4>
             <form class="form-contact comment_form" action="#" id="commentForm">
               <div class="row">
@@ -265,11 +269,11 @@ $id_artikel = $_GET['id'];
                 <button type="submit" class="button button-contactForm btn_1 boxed-btn">Post Comment</button>
               </div>
             </form>
-          </div>
+          </div> -->
           </div>
           <div class="col-lg-4">
             <div class="blog_right_sidebar">
-              <aside class="single_sidebar_widget search_widget">
+              <!-- <aside class="single_sidebar_widget search_widget">
                 <form action="#">
                   <div class="form-group m-0">
                     <div class="input-group">
@@ -280,60 +284,41 @@ $id_artikel = $_GET['id'];
                     </div>
                   </div>
                 </form>
-              </aside>
+              </aside> -->
               <aside class="single_sidebar_widget post_category_widget">
                 <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
                 <ul class="list cat-list">
-                  <li>
-                    <a href="#" class="d-flex">
-                      <p>Resaurant food</p>
-                      <p>(37)</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="d-flex">
-                      <p>Travel news</p>
-                      <p>(10)</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="d-flex">
-                      <p>Modern technology</p>
-                      <p>(03)</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="d-flex">
-                      <p>Product</p>
-                      <p>(11)</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="d-flex">
-                      <p>Inspiration</p>
-                      <p>(21)</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="d-flex">
-                      <p>Health Care</p>
-                      <p>(21)</p>
-                    </a>
-                  </li>
+                  <?php
+                  $query2 = mysqli_query($koneksi, "select tag, count(*) tag from artikel group by tag");
+                  while ($artikel2 = mysqli_fetch_array($query2)) {
+                  ?>
+                    <li>
+                      <a href="#" class="d-flex">
+                        <p><?php echo $artikel2[0]; ?></p>
+                        <p>(<?php echo $artikel2[1]; ?>)</p>
+                      </a>
+                    </li>
+                  <?php } ?>
                 </ul>
               </aside>
+
               <aside class="single_sidebar_widget popular_post_widget">
+
                 <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
-                <div class="media post_item">
-                  <img src="../assets/img/post/post_1.jpg" alt="post">
-                  <div class="media-body">
-                    <a href="blog_details.html">
-                      <h3 style="color: #2d2d2d;">From life was you fish...</h3>
-                    </a>
-                    <p>January 12, 2019</p>
+                <?php
+                $query = mysqli_query($koneksi, "select * from artikel order by datetime DESC LIMIT 4");
+                while ($artikel = mysqli_fetch_array($query)) {
+                ?>
+                  <div class="media post_item">
+                    <img src="<?php echo $artikel[3]; ?>" alt="post" width="80" height="75">
+                    <div class="media-body">
+                      <a href="blog_details.html">
+                        <h3 style="color: #2d2d2d;"><?php echo $artikel[1]; ?></h3>
+                      </a>
+                      <p><?php echo date_format(date_create($artikel[2]), "d-M-Y H:i"); ?></p>
+                    </div>
                   </div>
-                </div>
-                <div class="media post_item">
+                  <!-- <div class="media post_item">
                   <img src="../assets/img/post/post_2.jpg" alt="post">
                   <div class="media-body">
                     <a href="blog_details.html">
@@ -359,9 +344,10 @@ $id_artikel = $_GET['id'];
                     </a>
                     <p>01 Hours ago</p>
                   </div>
-                </div>
+                </div> -->
+                <?php } ?>
               </aside>
-              <aside class="single_sidebar_widget tag_cloud_widget">
+              <!-- <aside class="single_sidebar_widget tag_cloud_widget">
                 <h4 class="widget_title" style="color: #2d2d2d;">Tag Clouds</h4>
                 <ul class="list">
                   <li>
@@ -389,8 +375,8 @@ $id_artikel = $_GET['id'];
                     <a href="#">illustration</a>
                   </li>
                 </ul>
-              </aside>
-              <aside class="single_sidebar_widget instagram_feeds">
+              </aside> -->
+              <!-- <aside class="single_sidebar_widget instagram_feeds">
                 <h4 class="widget_title" style="color: #2d2d2d;">Instagram Feeds</h4>
                 <ul class="instagram_row flex-wrap">
                   <li>
@@ -424,8 +410,8 @@ $id_artikel = $_GET['id'];
                     </a>
                   </li>
                 </ul>
-              </aside>
-              <aside class="single_sidebar_widget newsletter_widget">
+              </aside> -->
+              <!-- <aside class="single_sidebar_widget newsletter_widget">
                 <h4 class="widget_title" style="color: #2d2d2d;">Newsletter</h4>
                 <form action="#">
                   <div class="form-group">
@@ -433,7 +419,7 @@ $id_artikel = $_GET['id'];
                   </div>
                   <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" type="submit">Subscribe</button>
                 </form>
-              </aside>
+              </aside> -->
             </div>
           </div>
         </div>

@@ -162,9 +162,9 @@
                                     <img src="assets/<?php echo $artikel[3]; ?>" alt="">
                                 </div>
                                 <div class="blog-caption">
-                                    <h3><a href="#"><?php echo $artikel[1]; ?></a></h3>
+                                    <h3><a href="article/detail.php?id=<?php echo $artikel[0]; ?>"><?php echo $artikel[1]; ?></a></h3>
                                     <p><?php echo $artikel[5]; ?>....</p>
-                                    <a href="article/detail.php" class="browse-btn">Read More</a>
+                                    <a href="article/detail.php?id=<?php echo $artikel[0]; ?>" class="browse-btn">Read More</a>
                                 </div>
                             </div>
                         </div> <?php } ?>
@@ -255,7 +255,7 @@
                         <!-- Section Tittle -->
                         <div class="section-tittle  d-flex justify-content-between align-items-center">
                             <h2>Gallery</h2>
-                            <a href="#" class="browse-btn mb-20">More Stories</a>
+                            <a href="/hangtuah6/gallery" class="browse-btn mb-20">More Stories</a>
                         </div>
                     </div>
                 </div>

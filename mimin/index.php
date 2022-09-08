@@ -121,7 +121,7 @@ if (!isset($_SESSION['id_user'])) {
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-            <li class="nav-header">Setting Header/Footer</li>
+            <li class="nav-header">Informasi Website</li>
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
@@ -377,7 +377,27 @@ if (!isset($_SESSION['id_user'])) {
                 </li>
               </ul>
             </li>
-            <li class="nav-header">EXAMPLES</li>
+            <li class="nav-header">Berita dan Artikel</li>
+
+
+            <li class="nav-item">
+              <a href="listartikel/" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  List Artikel
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  Buat Artikel Baru <span class="right badge badge-danger">New</span>
+                </p>
+              </a>
+            </li>
+
+
             <li class="nav-item">
               <a href="pages/calendar.html" class="nav-link">
                 <i class="nav-icon far fa-calendar-alt"></i>

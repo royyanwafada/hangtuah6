@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ganti WA Business</title>
+  <title>Ganti Nomor Telepon</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -26,7 +26,7 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Ganti Nomor WhatsApp Business</h1>
+              <h1>Ganti Nomor Telepon</h1>
             </div>
           </div>
         </div><!-- /.container-fluid -->
@@ -41,7 +41,7 @@
               <!-- general form elements -->
               <div class="card card-success">
                 <div class="card-header">
-                  <h3 class="card-title">Form</h3>
+                  <h3 class="card-title">Telepon</h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
@@ -51,16 +51,16 @@
                       <!-- checking old number on database -->
                       <?php
                       include "../../assets/config/db.php";
-                      $query = mysqli_query($koneksi, "select component from sosial_media where id='WA'");
+                      $query = mysqli_query($koneksi, "select component from sosial_media where id='TELP'");
                       $result = mysqli_fetch_array($query);
                       ?>
 
                       <label for="WaLama">Saat Ini</label>
-                      <input type="text" class="form-control" id="WaLama" placeholder="" value="<?php echo $result[0]; ?>" disabled="disabled">
+                      <input type="text" class="form-control" id="TelpLama" placeholder="" value="(031) <?php echo $result[0]; ?>" disabled="disabled">
                     </div>
                     <div class="form-group">
                       <label for="WaBaru">Baru</label>
-                      <input type="text" class="form-control" id="WaBaru" name="WaBaru" placeholder="Enter number (Gunakan format: 628xxxxx)" onkeyup="validAngka(this)" maxlength="16" required="required">
+                      <input type="text" class="form-control" id="TelpBaru" name="TelpBaru" placeholder="Masukkan nomor tanpa kode area, cth: 8923xxxx" onkeyup="validAngka(this)" maxlength="16" required="required">
                     </div>
                   </div>
                   <!-- /.card-body -->
@@ -71,8 +71,6 @@
 
               </div>
               <!-- /.card -->
-
-
 
       </section>
       <!-- /.content -->

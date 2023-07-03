@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ganti WA Business</title>
+  <title>Ganti Nomor WhatsApp Business</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -41,7 +41,7 @@
               <!-- general form elements -->
               <div class="card card-success">
                 <div class="card-header">
-                  <h3 class="card-title">Form</h3>
+                  <h3 class="card-title">Nomor Whatsapp</h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
@@ -71,8 +71,6 @@
 
               </div>
               <!-- /.card -->
-
-
 
       </section>
       <!-- /.content -->

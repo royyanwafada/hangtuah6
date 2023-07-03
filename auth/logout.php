@@ -5,3 +5,4 @@ echo '<script language="javascript">';
 echo 'alert("Username atau Password salah")';
 echo '</script>';
 header('Location: index.php');
+?>

@@ -3,7 +3,7 @@ include "../assets/config/db.php";
 session_start();
 $user_id = $_SESSION['id_user'];
 if (!isset($_SESSION['id_user'])) {
-  header('Location: login.php');
+  header('Location: ../auth/');
 }
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,8 @@ if (!isset($_SESSION['id_user'])) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin | Dashboard</title>
+  <title>Admin | SMP Hang Tuah 6 Excellent</title>
+  <link rel="icon" type="image/x-icon" href="../assets/img/icon/iconht6.png">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -111,7 +112,7 @@ if (!isset($_SESSION['id_user'])) {
           </div>
           <div class="info">
             <a href="#" class="d-block"><?php echo $display_name[0]; ?></a>
-            <a href="logout.php">Logout</a>
+            <a href="../auth/">Logout</a>
 
           </div>
         </div>
@@ -137,7 +138,7 @@ if (!isset($_SESSION['id_user'])) {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="telp/" class="nav-link">
                     <i class="far ion-ios-telephone nav-icon"></i>
                     <p>Telepon</p>
                   </a>
@@ -157,7 +158,7 @@ if (!isset($_SESSION['id_user'])) {
                 <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="far ion-social-youtube nav-icon"></i>
-                    <p>Youtube</p>
+                    <p>Youtube Channel</p>
                   </a>
                 </li>
               </ul>
@@ -166,21 +167,15 @@ if (!isset($_SESSION['id_user'])) {
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-circle"></i>
                 <p>
-                  Footer
+                  Bagian Bawah
                   <i class="right fas fa-angle-left"></i>
                 </p>
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
                   <a href="#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Ganti Telepon</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Level 2</p>
+                    <i class="far ion-social-youtube nav-icon"></i>
+                    <p>Ganti Video</p>
                   </a>
                 </li>
               </ul>
@@ -379,9 +374,8 @@ if (!isset($_SESSION['id_user'])) {
             </li>
             <li class="nav-header">Berita dan Artikel</li>
 
-
             <li class="nav-item">
-              <a href="listartikel/" class="nav-link">
+              <a href="beritadanartikel/listartikel/" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   List Artikel
@@ -389,7 +383,7 @@ if (!isset($_SESSION['id_user'])) {
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="beritadanartikel/buatartikelbaru/" class="nav-link">
                 <i class="nav-icon fas fa-edit"></i>
                 <p>
                   Buat Artikel Baru <span class="right badge badge-danger">New</span>

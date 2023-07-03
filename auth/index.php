@@ -123,6 +123,7 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="../assets/js/prevent.js"></script>
+<title>Login | SMP Hang Tuah 6 Excellent</title>
 
 <div class="login-page">
   <div class="form">

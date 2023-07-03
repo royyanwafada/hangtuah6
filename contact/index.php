@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-<?php include "../bar.php";
+<?php
+include "../bar.php";
 include "../assets/config/db.php";
 ?>
 
@@ -29,45 +30,45 @@ include "../assets/config/db.php";
     <header>
         <div class="header-area">
             <!-- <div class="main-header ">
-                <div class="header-top">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="d-flex justify-content-center flex-wrap align-items-center">
-                                    <div class="header-info-left">
-                                        <ul>     
-                                            <li><span>ENDS TOMORROW:</span> Join Teachable for $4,800 in bonus content</li>
-                                        </ul>
-                                    </div>
-                                    <div class="header-info-right d-flex align-items-center">
-                                       
-                                        <div class="cd-timer" id="countdown">
-                                            <div class="cd-item">
-                                                <span>40</span>
-                                                <p>Days</p>
-                                            </div>
-                                            <div class="cd-item">
-                                                <span>18</span>
-                                                <p>Hours</p>
-                                            </div>
-                                            <div class="cd-item">
-                                                <span>46</span>
-                                                <p>Minutes</p>
-                                            </div>
-                                            <div class="cd-item">
-                                                <span>32</span>
-                                                <p>Seconds</p>
-                                            </div>
+                    <div class="header-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="d-flex justify-content-center flex-wrap align-items-center">
+                                        <div class="header-info-left">
+                                            <ul>     
+                                                <li><span>ENDS TOMORROW:</span> Join Teachable for $4,800 in bonus content</li>
+                                            </ul>
                                         </div>
-                                       
-                                        <a href="#" class="browse-btn browse-btn2 ml-40 d-none d-sm-block">Learn More</a>
+                                        <div class="header-info-right d-flex align-items-center">
+                                        
+                                            <div class="cd-timer" id="countdown">
+                                                <div class="cd-item">
+                                                    <span>40</span>
+                                                    <p>Days</p>
+                                                </div>
+                                                <div class="cd-item">
+                                                    <span>18</span>
+                                                    <p>Hours</p>
+                                                </div>
+                                                <div class="cd-item">
+                                                    <span>46</span>
+                                                    <p>Minutes</p>
+                                                </div>
+                                                <div class="cd-item">
+                                                    <span>32</span>
+                                                    <p>Seconds</p>
+                                                </div>
+                                            </div>
+                                        
+                                            <a href="#" class="browse-btn browse-btn2 ml-40 d-none d-sm-block">Learn More</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div> -->
+                </div> -->
             <div class="header-bottom  header-sticky">
                 <div class="container">
                     <div class="d-flex align-items-center justify-content-between flex-wrap position-relative">
@@ -114,10 +115,10 @@ include "../assets/config/db.php";
                         <a href="https://chat.whatsapp.com/JkUojZGuTKF8sZjyRqqRoI" class="genric-btn success radius">Join Group WA Info PPDB 2022/2023</a>
 
                         <!-- <a href="#" class="genric-btn info radius">Info</a>
-                            <a href="#" class="genric-btn warning radius">Warning</a>
-                            <a href="#" class="genric-btn danger radius">Danger</a>
-                            <a href="#" class="genric-btn link radius">Link</a>
-                            <a href="#" class="genric-btn disable radius">Disable</a> -->
+                                <a href="#" class="genric-btn warning radius">Warning</a>
+                                <a href="#" class="genric-btn danger radius">Danger</a>
+                                <a href="#" class="genric-btn link radius">Link</a>
+                                <a href="#" class="genric-btn disable radius">Disable</a> -->
                     </div>
                 </div>
                 <div class="row">
@@ -125,7 +126,7 @@ include "../assets/config/db.php";
                         <h2 class="contact-title">Get in Touch</h2>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="https://preview.colorlib.com/theme/universityedu/contact_process.php" method="post" id="contactForm" novalidate>
+                        <form class="form-contact contact_form" action="#" method="post" id="contactForm" novalidate>
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
@@ -164,7 +165,7 @@ include "../assets/config/db.php";
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
-                                <h3>(+6231) 99681417</h3>
+                                <h3>(+6231) <?php echo $telp[0];?></h3>
                                 <p>Helpdesk Office Phone</p>
                             </div>
                         </div>

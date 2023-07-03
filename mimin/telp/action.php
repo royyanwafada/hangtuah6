@@ -1,8 +1,8 @@
 <?php
 include "../../assets/config/db.php";
-$newnumber = $_POST['WaBaru'];
+$newnumber = $_POST['TelpBaru'];
 // echo $newnumber;
-$query = mysqli_query($koneksi, "UPDATE sosial_media SET component='$newnumber' where id='WA'");
+$query = mysqli_query($koneksi, "UPDATE sosial_media SET component='$newnumber' where id='TELP'");
 
 if ($query) {
     header('Location: index.php');

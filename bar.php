@@ -1,13 +1,14 @@
 <?php
 include "assets/config/db.php";
 
-$query = mysqli_query($koneksi, "select component from sosial_media where id='WA'");
-$wa = mysqli_fetch_array($query);
-
-
-
+// $query = mysqli_query($koneksi, "select component from sosial_media where id='WA'");
+$wa = mysqli_fetch_array(mysqli_query($koneksi, "select component from sosial_media where id='WA'"));
+$telp = mysqli_fetch_array(mysqli_query($koneksi, "select component from sosial_media where id='TELP'"));
+$fb = 0;
+$twitter = 0;
+$youtube = 0;
+$embed = 0;
 $domain = "http://localhost/hangtuah6/";
-
 $icon = "<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"" . $domain . "assets/img/icon/iconht6.png\">";
 
 $countdown =
@@ -136,8 +137,8 @@ $footer =
                                 <div class=\"footer-tittle mb-10\">
                                     <h4>SMP Hangtuah 6 Excellent Juanda Sidoarjo</h4>
                                     <p>Jalan Raya Ir. H.Juanda No.9, Dukuh, Sedati Agung, Kec. Sedati, Kabupaten Sidoarjo, Jawa Timur 61253.</p>
-                                    <a href=\"tel:+623199681417\">Telepon: (031) 99681417</a></br>
-                                    <a href=\"https://wa.me/" . $wa[0] . "?text=Halo\">WhatsApp: +" . $wa[0] . "
+                                    <a href=\"tel:+6231".$telp[0]."\">Telepon: (031) ".$telp[0]."</a></br>
+                                    <a href=\"https://wa.me/".$wa[0]."?text=Halo\">WhatsApp: +".$wa[0]."
                                 </div>
 
                                 <!--<div class=\"footer-form mb-20\">
@@ -159,7 +160,7 @@ $footer =
                                 </div>-->
 
                                 <div class=\"footer-social mt-30\">
-                                    <a href=\"https://wa.me/6285163006904?text=Halo%20Assalamualaikum\"><i class=\"ti-tablet\"></i></a>
+                                    <a href=\"https://wa.me/".$wa[0]."?text=Halo%20Assalamualaikum\"><i class=\"ti-tablet\"></i></a>
                                     <a href=\"#\"><i class=\"fab fa-facebook\"></i></a>
                                     <a href=\"https://instagram.com/smphangtuah6excellent\"><i class=\"fab fa-instagram\"></i></a>
                                     <!--<a href=\"#\"><i class=\"fab fa-linkedin-in\"></i></a>-->
@@ -207,7 +208,7 @@ $footer =
                             </div>
                         </div>
                         
-                    <iframe height=\"360\" src=\"https://www.youtube.com/embed/tqxxqM0GhD8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
+                    <iframe height=\"360\" src=\"https://www.youtube.com/embed/4z31RLlWvKw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

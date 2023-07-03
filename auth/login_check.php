@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     $username = $_POST['un'];
     $password = $_POST['pwd'];
 } else {
-    header('Location: login.php');
+    header('Location: index.php');
 }
 
 // Check connection
@@ -24,7 +24,7 @@ $id_user = mysqli_fetch_array($result);
 if ($numrows == 1) {
     session_start();
     $_SESSION['id_user'] = $id_user[0];
-    header('Location: index.php');
+    header('Location: ../mimin/');
 } else {
-    header('Location: login.php?failed');
+    header('Location: index.php?failed');
 }

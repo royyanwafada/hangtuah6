@@ -1,8 +1,9 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-<?php include "../bar.php";
-?>
 
+<?php 
+    include "../bar.php";
+?>
 
 <head>
     <meta charset="utf-8">
@@ -28,46 +29,6 @@
 <body>
     <header>
         <div class="header-area">
-            <!-- <div class="main-header ">
-                <div class="header-top">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="d-flex justify-content-center flex-wrap align-items-center">
-                                    <div class="header-info-left">
-                                        <ul>
-                                            <li><span>ENDS TOMORROW:</span> Join Teachable for $4,800 in bonus content</li>
-                                        </ul>
-                                    </div>
-                                    <div class="header-info-right d-flex align-items-center">
-
-                                        <div class="cd-timer" id="countdown">
-                                            <div class="cd-item">
-                                                <span>40</span>
-                                                <p>Days</p>
-                                            </div>
-                                            <div class="cd-item">
-                                                <span>18</span>
-                                                <p>Hours</p>
-                                            </div>
-                                            <div class="cd-item">
-                                                <span>46</span>
-                                                <p>Minutes</p>
-                                            </div>
-                                            <div class="cd-item">
-                                                <span>32</span>
-                                                <p>Seconds</p>
-                                            </div>
-                                        </div>
-
-                                        <a href="#" class="browse-btn browse-btn2 ml-40 d-none d-sm-block">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="header-bottom  header-sticky">
                 <div class="container">
                     <div class="d-flex align-items-center justify-content-between flex-wrap position-relative">
@@ -83,6 +44,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </header>
     <main>
         <!-- Hero area Start-->
@@ -107,42 +70,45 @@
                 <div class="row">
                     <div class="col-lg-8 mb-5 mb-lg-0">
                         <div class="blog_left_sidebar">
-
                             <?php
-                            //include "../assets/config/db.php";
+                            //query mengambil data artikel lalu di looping sesuai jumlah banyaknya artikel
                             $query = mysqli_query($koneksi, "select * from artikel order by datetime DESC");
-                            $c = 1;
+                            $c = 1; //untuk ditampilkan pada recent article
                             while ($artikel = mysqli_fetch_array($query)) {
                             ?>
-
                                 <article class="blog_item">
                                     <div class="blog_item_img">
-                                        <img class="card-img rounded-0" src="<?php echo $artikel[3];
-                                                                                $recent_post[$c][2] = $artikel[3]; ?>" alt="">
+                                        <img class="card-img rounded-0" src="<?php echo $artikel[3]; $recent_post[$c][2] = $artikel[3]; ?>" alt="">
                                         <a href="#" class="blog_item_date">
-                                            <h3><?php echo date_format(date_create($artikel[2]), "d");
-                                                $recent_post[$c][0] = $artikel[2]; ?></h3>
+                                            <!-- Menampilkan angka-->
+                                            <h3><?php echo date_format(date_create($artikel[2]), "d"); $recent_post[$c][0] = $artikel[2]; ?></h3>
+                                            
+                                            <!-- Menampilkan bulan-->
                                             <p><?php echo date_format(date_create($artikel[2]), "M"); ?></p>
                                         </a>
                                     </div>
                                     <div class="blog_details">
-                                        <a class="d-inline-block" href="detail.php?id=<?php echo $artikel[0]; ?>">
-                                            <h2 class="blog-head" style="color: #2d2d2d;">
-                                                <?php echo $artikel[1];
-                                                $recent_post[$c][1] = $artikel[1]; ?></h2>
+                                        <a class="d-inline-block" href="detail.php?id=<?php echo $artikel[0]; ?>"> <!-- Link Detail Artikel by ID-->
+                                            <!-- Judul Artikel, Font Bold/Hijau-->
+                                            <h2 class="blog-head" style="color: #2d2d2d;"> <?php echo $artikel[1]; $recent_post[$c][1] = $artikel[1]; ?></h2>
                                         </a>
                                         <p><?php echo $artikel[5]; ?></p>
                                         <ul class="blog-info-link">
+                                            <!-- Nama Akun yg Upload Berita -->
                                             <li><a href="#"><i class="fa fa-user"></i><?php echo $artikel[9]; ?></a></li>
                                             <li><a href="#"><i class="fa fa-comments"></i> 0 Comments</a></li>
                                         </ul>
                                     </div>
                                 </article>
 
-                            <?php $c = $c + 1;
-                            } ?>
+                            <?php 
+                            // looping untuk recent article
+                            $c = $c + 1;
+                            } 
 
-                            </article> -->
+                            ?>
+                            </article>
+
                             <nav class="blog-pagination justify-content-center d-flex">
                                 <ul class="pagination">
                                     <li class="page-item">
@@ -198,15 +164,18 @@
                             </aside>
                             <aside class="single_sidebar_widget popular_post_widget">
                                 <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
-                                <?php //get data from mysqli fetch array article and insert to array
+                                <?php //ambil data dari looping mysqli fetch array article yang diinsert ke var array
                                 for ($i = 1; $i < $c; $i++) {
                                 ?>
                                     <div class="media post_item">
                                         <img src="<?php echo $recent_post[$i][2]; ?>" alt="post" width="80" height="75">
                                         <div class="media-body">
                                             <a href="blog_details.html">
+                                                <!-- Judul -->
                                                 <h3 style="color: #2d2d2d;"><?php echo $recent_post[$i][1]; ?></h3>
                                             </a>
+
+                                            <!-- Format Tanggal-->
                                             <p><?php echo date_format(date_create($recent_post[$i][0]), "d-M-Y H:i"); ?></p>
                                         </div>
                                     </div> <?php } ?>
@@ -248,15 +217,6 @@
                                     </li>
                                 </ul>
                             </aside>
-                            <!-- <aside class="single_sidebar_widget newsletter_widget">
-                                <h4 class="widget_title" style="color: #2d2d2d;">Newsletter</h4>
-                                <form action="#">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
-                                    </div>
-                                    <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn" type="submit">Subscribe</button>
-                                </form>
-                            </aside> -->
                         </div>
                     </div>
                 </div>

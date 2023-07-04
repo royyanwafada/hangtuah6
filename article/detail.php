@@ -1,7 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-<?php include "../bar.php";
+
+<?php 
+include "../bar.php";
 $id_artikel = $_GET['id'];
+
 if (!isset($_GET['id'])) {
   header('Location: index.php');
 }
@@ -10,24 +13,24 @@ if (!isset($_GET['id'])) {
 
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>News & Article | SMP Hang Tuah 6 Excellent</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <?php echo $icon; ?>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>News & Article | SMP Hang Tuah 6 Excellent</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php echo $icon; ?>
 
-  <!-- CSS here -->
-  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="../assets/css/slicknav.css">
-  <link rel="stylesheet" href="../assets/css/animate.min.css">
-  <link rel="stylesheet" href="../assets/css/magnific-popup.css">
-  <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
-  <link rel="stylesheet" href="../assets/css/themify-icons.css">
-  <link rel="stylesheet" href="../assets/css/slick.css">
-  <link rel="stylesheet" href="../assets/css/nice-select.css">
-  <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/slicknav.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
@@ -35,18 +38,18 @@ if (!isset($_GET['id'])) {
     <div class="header-area">
       <div class="header-bottom  header-sticky">
         <div class="container">
-          <div class="d-flex align-items-center justify-content-between flex-wrap position-relative">
-            <!-- Logo -->
-            <div class="left-side d-flex align-items-center">
-              <?php echo $logoatas; ?>
-              <!-- Main-menu -->
-              <?php echo $menubar; ?>
-              <!-- Mobile Menu -->
-              <div class="col-12">
-                <div class="mobile_menu d-block d-lg-none"></div>
-              </div>
+            <div class="d-flex align-items-center justify-content-between flex-wrap position-relative">
+                <!-- Logo -->
+                <div class="left-side d-flex align-items-center">
+                    <?php echo $logoatas; ?>
+                    <!-- Main-menu -->
+                    <?php echo $menubar; ?>
+                    <!-- Mobile Menu -->
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
   </header>
   <main>

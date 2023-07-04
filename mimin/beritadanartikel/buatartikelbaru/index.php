@@ -46,6 +46,15 @@
 	                <input type="text" class="form-control" id="judul" name="judul" maxlength="320" required="true" onkeyup="validHurufAngka(this)">
                 </div>
                 <div class="form-group">
+	                <label>Tagging</label>
+	                <select class="form-control select2" style="width: 100%;" id="tagging" name="tagging" required="true">
+	                    <option selected="selected">-- Pilih Tag --</option>
+	                    <option value="OSIS">OSIS</option>
+	                    <option value="Extracurricular">Extracurricular</option>
+	                    <option value="Student">Student</option>
+	                </select>
+                </div>
+                <div class="form-group">
                 <label>Tanggal dan Jam:</label>
                     <div class="input-group date" id="reservationdatetime" data-target-input="nearest">
                         <input type="text" id="tanggal" name="tanggal" required="true" class="form-control datetimepicker-input" data-target="#reservationdatetime"/>
@@ -68,7 +77,7 @@
             <textarea id="artikel" name="artikel" ></textarea>
 
 	        <div class="card-footer">
-                </br><button type="submit" class="btn btn-primary">Submit</button>
+                </br><button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
             </div>
         </div>
     </form>

@@ -27,31 +27,70 @@
 	<link rel="stylesheet" href="../../plugins/dropzone/min/dropzone.min.css">
 	<!-- Theme style -->
 	<link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+
+	<link rel="stylesheet" href="../tinymce/js/tinymce/skins/ui/oxide/skin.min.css">
+	<script src="../tinymce/js/tinymce/tinymce.min.js"></script>
+	<script src="../../../assets/js/prevent.js"></script>
 </head>
 <body>
-    <div class="col-md-6">
+</br>
+    <div class="col-md-9">  
+    <form action="proses.php" method="post">
         <div class="card card-primary">
             <div class="card-header">
-                <h3 class="card-title">Date picker</h3>
-              </div>
-              	<div class="card-body">
-                <!-- Date and time -->
+                <h3 class="card-title">Buat Artikel Baru</h3>
+            </div>
+            <div class="card-body">
                 <div class="form-group">
-                <label>Date and time:</label>
+	                <label for="exampleInputEmail1">Judul</label>
+	                <input type="text" class="form-control" id="judul" name="judul" maxlength="320" required="true" onkeyup="validHurufAngka(this)">
+                </div>
+                <div class="form-group">
+                <label>Tanggal dan Jam:</label>
                     <div class="input-group date" id="reservationdatetime" data-target-input="nearest">
-                        <input type="text" class="form-control datetimepicker-input" data-target="#reservationdatetime"/>
+                        <input type="text" id="tanggal" name="tanggal" required="true" class="form-control datetimepicker-input" data-target="#reservationdatetime"/>
                         <div class="input-group-append" data-target="#reservationdatetime" data-toggle="datetimepicker">
-                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                         </div>
                     </div>
                 </div>
+                <div class="form-group">
+	                <label for="exampleInputFile">Gambar</label>
+		                <div class="input-group">
+			                <div class="custom-file">
+			                	<input type="file" class="custom-file-input" id="gambar" name="gambar" required="true">
+			                	<label class="custom-file-label" for="exampleInputFile">Choose file</label>
+			                </div>
+		                </div>
+	            </div>
             </div>
-            <div class="card-footer">
-                  text footer
-            </div> 
+
+            <textarea id="artikel" name="artikel" ></textarea>
+
+	        <div class="card-footer">
+                </br><button type="submit" class="btn btn-primary">Submit</button>
+            </div>
         </div>
+    </form>
     </div>
 
+    <script type="text/javascript">
+		tinymce.init({
+	    selector: '#artikel',
+	    //width: 1200,
+	    //height: 300,
+	   	plugins: [
+      	'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'preview', 'anchor', 'pagebreak',
+      	'searchreplace', 'wordcount', 'visualblocks', 'visualchars', 'code', 'fullscreen', 'insertdatetime',
+      	'media', 'table', 'emoticons', 'template', 'help'
+    	],
+    	toolbar: 'undo redo | styles | bold italic | alignleft aligncenter alignright alignjustify | ' +
+      	'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+      	'forecolor backcolor emoticons | help',
+    	menubar: 'favs file edit view insert format tools table help'
+	});
+
+	</script>
 
 	<!-- jQuery -->
 	<script src="../../plugins/jquery/jquery.min.js"></script>
@@ -80,6 +119,8 @@
 	<script src="../../dist/js/adminlte.min.js"></script>
 	<!-- AdminLTE for demo purposes -->
 	<script src="../../dist/js/demo.js"></script>
+	<!-- bs-custom-file-input -->
+	<script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
 	<!-- Page specific script -->
 	<script>
 	  $(function () {
@@ -214,6 +255,12 @@
 	    myDropzone.removeAllFiles(true)
 	  }
 	  // DropzoneJS Demo Code End
+	</script>
+
+	<script>
+		$(function () {
+		  bsCustomFileInput.init();
+		});
 	</script>
 </body>
 </html>

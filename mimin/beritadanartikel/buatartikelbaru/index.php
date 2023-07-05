@@ -33,9 +33,16 @@
 	<script src="../../../assets/js/prevent.js"></script>
 </head>
 <body>
+<?php
+    if (isset($_GET['done'])) {
+        echo '<script language="javascript">';
+        echo 'alert("Artikel telah berhasil diterbitkan")';
+        echo '</script>';
+    }
+?>
 </br>
     <div class="col-md-9">  
-    <form action="proses.php" method="post">
+    <form action="proses.php" method="post" enctype="multipart/form-data">
         <div class="card card-primary">
             <div class="card-header">
                 <h3 class="card-title">Buat Artikel Baru</h3>

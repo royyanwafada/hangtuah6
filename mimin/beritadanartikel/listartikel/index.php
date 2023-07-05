@@ -69,17 +69,6 @@ if (!isset($_SESSION['id_user'])) {
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="card">
-                                <!-- <div class="card-header border-0">
-                                    <h3 class="card-title"></h3>
-                                    <div class="card-tools">
-                                        <a href="#" class="btn btn-tool btn-sm">
-                                            <i class="fas fa-download"></i>
-                                        </a>
-                                        <a href="#" class="btn btn-tool btn-sm">
-                                            <i class="fas fa-bars"></i>
-                                        </a>
-                                    </div>
-                                </div> -->
                                 <div class="card-body table-responsive p-0">
                                     <table class="table table-striped table-valign-middle">
                                         <thead>
@@ -92,35 +81,18 @@ if (!isset($_SESSION['id_user'])) {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php
-
+                                        <?php
                                             $query = mysqli_query($koneksi, "select * from artikel order by datetime DESC");
                                             $c = 1;
                                             while ($artikel = mysqli_fetch_array($query)) {
-                                            ?>
-                                                <tr>
-                                                    <td>
-                                                        <img src="../../<?php echo $artikel[3]; ?>" alt="Product 1" class="img-circle img-size-64 mr-2">
-                                                        <?php echo $artikel[4]; ?>
-                                                    </td>
-                                                    <td><?php echo $artikel[2]; ?></td>
-                                                    <td><?php echo $artikel[9]; ?></td>
-                                                    <!-- <td>
-                                                        <small class="text-success mr-1">
-                                                            <i class="fas fa-arrow-up"></i>
-                                                            12%
-                                                        </small>
-                                                        12,000 Sold
-                                                    </td> -->
-                                                    <td>
-                                                        <a href="#" class="text-muted">
-                                                            <i class="fas fa-search"></i>
-                                                        </a>
-                                                    </td>
-                                                    <td>
-                                                        <input type="checkbox" name="my-checkbox" checked data-bootstrap-switch data-off-color="danger" data-on-color="success">
-                                                    </td>
-                                                </tr>
+                                        ?>
+                                            <tr>
+                                                <td><img src="../images/<?php echo $artikel[3]; ?>" alt="Product 1" class="img-circle img-size-64 mr-2"><?php echo $artikel[1];?></td>
+                                                <td><?php echo $artikel[2]; ?></td>
+                                                <td><?php echo $artikel[6]; ?></td>
+                                                <td><a href="#" target="_blank" class="text-muted"><i class="fas fa-search"></i></a></td>
+                                                <td><input type="checkbox" name="status" id="status" data-bootstrap-switch data-off-color="danger" data-on-color="success" <?php echo $artikel[5];?>></td>
+                                            </tr>
                                             <?php } ?>
                                         </tbody>
                                     </table>

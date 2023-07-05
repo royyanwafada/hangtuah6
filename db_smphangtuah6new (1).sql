@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 04, 2023 at 10:30 AM
+-- Generation Time: Jul 05, 2023 at 10:54 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -33,23 +33,23 @@ CREATE TABLE `artikel` (
   `judul` varchar(320) NOT NULL,
   `datetime` datetime NOT NULL,
   `gambar` varchar(320) NOT NULL,
-  `p1` mediumtext NOT NULL,
-  `p2` varchar(640) NOT NULL,
-  `p3` varchar(640) NOT NULL,
-  `p4` varchar(640) NOT NULL,
-  `p5` varchar(640) NOT NULL,
-  `tag` varchar(16) NOT NULL,
-  `quote_highlight` varchar(160) NOT NULL
+  `paragraf` mediumtext NOT NULL,
+  `status` varchar(640) NOT NULL,
+  `tag` varchar(16) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `artikel`
 --
 
-INSERT INTO `artikel` (`id_artikel`, `judul`, `datetime`, `gambar`, `p1`, `p2`, `p3`, `p4`, `p5`, `tag`, `quote_highlight`) VALUES
-(1, 'Google inks pact for new 35-storey office', '2022-08-16 15:56:59', '../assets/img/blog/single_blog_2.jpg', 'That dominion stars lights dominion divide years for fourth have don\'t stars is that he earth it first without heaven in place seed it second morning saying', '', '', '', '', 'Student', ''),
-(2, 'Google inks pact for new 35-storey office', '2022-08-03 15:56:59', '../assets/img/blog/single_blog_3.jpg', 'That dominion stars lights dominion divide years for fourth have don\'t stars is that he earth it first without heaven in place seed it second morning saying', '', '', '', '', 'Extracurricular', ''),
-(3, 'SMP Hang Tuah 6 Excellent Juanda menggelar penyembelihan hewan kurban, Senin (11/7)', '2022-08-24 08:21:07', '../assets/img/blog/qurban.jpeg', 'SIDOARJO – SMP Hang Tuah 6 Excellent Juanda menggelar penyembelihan hewan kurban, Senin (11/7). Sedikitnya ada lima hewan kurban yang disembelih sejak pukul 06.30. Yaitu satu ekor sapi dan empat ekor kambing.', 'Penyembelihan hewan kurban tetap mematuhi protokol kesehatan (prokes). Daging kurban didistribusikan kepada masyarakat sekitar hingga sejumlah panti asuhan yang berada di kawasan Juanda.\r\n', '“Kami berterimakasih kepada para donatur, wali murid serta dewan guru yang memilih menyerahkan hewan kurbannya ke sekolah kami,” ujar Kasatdik SMP Hang Tuah 6 Excellent, Irra Fatukawati, S.Si, M.Pd. Penyembelihan hewan kurban tersebut diharapkan dapat membawa berkah sendiri terhadap SMP Hang Tuah 6 Excellent Juanda. Sehingga ke depannya dapat terus membuat program yang bagus dan baik untuk dilaksanakan.', 'Di sisi lain, pembagian daging kurban dilakukan dengan cara diantarakan. Hal itu agar tak terjadi kerumunan massa. Uniknya, kegiatan tersebut tak hanya diikuti para dewan guru dan para staf, namun dibantu anggota OSIS, anggota Student Dicipline Commission (SDC) dan warga sekitar. “Kami bersyukur kegiatan ini berjalan dengan lancar dan pembagian dapat tersalurkan secara merata. Semoga bisa menambah ketaqwaan kita kepada Tuhan Yang Maha Esa,” jelasnya. (far/vga)', '', 'OSIS', '');
+INSERT INTO `artikel` (`id_artikel`, `judul`, `datetime`, `gambar`, `paragraf`, `status`, `tag`) VALUES
+(1, 'Google inks pact for new 35-storey office', '2022-08-16 15:56:59', 'single_blog_2.jpg', 'That dominion stars lights dominion divide years for fourth have don\'t stars is that he earth it first without heaven in place seed it second morning saying', '', 'Student'),
+(2, 'Google inks pact for new 35-storey office', '2022-08-03 15:56:59', 'single_blog_3.jpg', 'That dominion stars lights dominion divide years for fourth have don\'t stars is that he earth it first without heaven in place seed it second morning saying', '', 'Extracurricular'),
+(3, 'SMP Hang Tuah 6 Excellent Juanda menggelar penyembelihan hewan kurban, Senin (11/7)', '2022-08-24 08:21:07', 'qurban.jpeg', 'SIDOARJO – SMP Hang Tuah 6 Excellent Juanda menggelar penyembelihan hewan kurban, Senin (11/7). Sedikitnya ada lima hewan kurban yang disembelih sejak pukul 06.30. Yaitu satu ekor sapi dan empat ekor kambing.', '', 'OSIS'),
+(4, 'Tes Judul Artikel', '0000-00-00 00:00:00', '20230705050052.JPG', '<p>dddd okeh</p>', '', 'OSIS'),
+(5, 'Febrianti', '0000-00-00 00:00:00', '20230705052714.jpg', '<p>ddd</p>', '', 'OSIS'),
+(6, 'Febrianti', '2023-07-04 22:43:00', '20230705095156.jpg', '<p>dafsdf</p>', 'checked', 'Extracurricular'),
+(7, 'bbbbbbb', '2023-07-05 23:42:00', '20230705095248.jpg', '<p>SSS</p>', 'checked', 'Extracurricular');
 
 -- --------------------------------------------------------
 
@@ -128,7 +128,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `artikel`
 --
 ALTER TABLE `artikel`
-  MODIFY `id_artikel` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_artikel` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

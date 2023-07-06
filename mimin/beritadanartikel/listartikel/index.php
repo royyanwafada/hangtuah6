@@ -90,10 +90,31 @@ if (!isset($_SESSION['id_user'])) {
                                                 <td><img src="../images/<?php echo $artikel[3]; ?>" alt="Product 1" class="img-circle img-size-64 mr-2"><?php echo $artikel[1];?></td>
                                                 <td><?php echo $artikel[2]; ?></td>
                                                 <td><?php echo $artikel[6]; ?></td>
-                                                <td><a href="#" target="_blank" class="text-muted"><i class="fas fa-search"></i></a></td>
-                                                <td><input type="checkbox" name="status" id="status" data-bootstrap-switch data-off-color="danger" data-on-color="success" <?php echo $artikel[5];?>></td>
+                                                <td><a href="../../../article/detail.php?id=<?php echo $artikel[0];?>" target="_blank" class="text-muted"><i class="fas fa-search"></i></a></td>
+                                                <!-- <td><input type="checkbox" name="status" id="status"  data-off-color="danger" data-bootstrap-switch data-on-color="success" <?php echo $artikel[5];?> ></td> -->
+                                                <td>
+                                                    <div class="form-group">
+                                                        <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                                            <input type="checkbox" class="custom-control-input" name="status" 
+                                                            id="status<?php echo $artikel[0];?>" <?php echo $artikel[5];?> 
+                                                            onclick="alert('Anda akan mengubah status artikel, anda yakin?'); 
+                                                            setTimeout(function (){location.href = 'gantistatus.php?idartikel=<?php echo $artikel[0];?>'},500);">
+                                                            <label class="custom-control-label" for="status<?php echo $artikel[0];?>"></label>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                             </tr>
                                             <?php } ?>
+
+                                            <!-- <tr>
+
+                                            <td><div class="form-group">
+                                                <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
+                                                  <input type="checkbox" class="custom-control-input" id="customSwitch3" onclick="setTimeout(function (){location.href = 'localhost/hangtuah6/auth'},1000);">
+                                                  <label class="custom-control-label" for="customSwitch3">Toggle this custom switch element with custom colors danger/success</label>
+                                                </div>
+                                              </div></td>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -117,6 +138,14 @@ if (!isset($_SESSION['id_user'])) {
     <!-- REQUIRED SCRIPTS -->
 
     <!-- jQuery -->
+    <script>
+        $('#coba').on('click', function(){
+        location.href = 'localhost/google'
+            //console.log('tes');
+        });
+ 
+    </script>
+
     <script src="../../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>

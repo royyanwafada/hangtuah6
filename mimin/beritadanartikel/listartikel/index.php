@@ -105,16 +105,6 @@ if (!isset($_SESSION['id_user'])) {
                                                 </td>
                                             </tr>
                                             <?php } ?>
-
-                                            <!-- <tr>
-
-                                            <td><div class="form-group">
-                                                <div class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
-                                                  <input type="checkbox" class="custom-control-input" id="customSwitch3" onclick="setTimeout(function (){location.href = 'localhost/hangtuah6/auth'},1000);">
-                                                  <label class="custom-control-label" for="customSwitch3">Toggle this custom switch element with custom colors danger/success</label>
-                                                </div>
-                                              </div></td>
-                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>

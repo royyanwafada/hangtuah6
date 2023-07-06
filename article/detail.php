@@ -77,37 +77,29 @@ if (!isset($_GET['id'])) {
           <div class="col-lg-8 posts-list">
             <div class="single-post">
 
-              <?php $query = mysqli_query($koneksi, "select * from artikel where id_artikel = '$id_artikel'");
-              while ($artikel = mysqli_fetch_array($query)) { ?>
+              <?php $artikel = mysqli_fetch_array(mysqli_query($koneksi, "select * from artikel where id_artikel = '$id_artikel'"));?>
+              
                 <div class="feature-img">
-                  <img class="img-fluid" src="<?php echo $artikel[3]; ?>" alt="">
+                  <img class="img-fluid" src="../mimin/beritadanartikel/images/<?php echo $artikel[3];?>" alt="">
                 </div>
                 <div class="blog_details">
                   <h2 style="color: #2d2d2d;"> <?php echo $artikel[1]; ?>
                   </h2>
                   <ul class="blog-info-link mt-3 mb-4">
-                    <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                    <li><a href="#"><i class="fa fa-user"></i> <?php echo $artikel[6]; ?> </a></li>
                     <li><a href="#"><i class="fa fa-comments"></i> 0 Comments</a></li>
                   </ul>
                   <p class="excert">
                     <?php echo $artikel[4]; ?>
-                  </p>
-                  <p>
-                    <?php echo $artikel[5]; ?>
                   </p>
                   <!-- <div class="quote-wrapper">
                   <div class="quotes">
                     MCSE
                   </div>
                 </div> -->
-                  <p>
-                    <?php echo $artikel[6]; ?>
-                  </p>
-                  <p>
-                    <?php echo $artikel[7]; ?>
-                  </p>
+                  
                 </div>
-            </div> <?php } ?>
+            </div>
           <!-- <div class="navigation-top">
             <div class="d-sm-flex justify-content-between text-center">
               <p class="like-info"><span class="align-middle"><i class="fa fa-heart"></i></span> Lily and 4
@@ -293,12 +285,12 @@ if (!isset($_GET['id'])) {
                 <ul class="list cat-list">
                   <?php
                   $query2 = mysqli_query($koneksi, "select tag, count(*) tag from artikel group by tag");
-                  while ($artikel2 = mysqli_fetch_array($query2)) {
+                  while ($kategori = mysqli_fetch_array($query2)) {
                   ?>
                     <li>
                       <a href="#" class="d-flex">
-                        <p><?php echo $artikel2[0]; ?></p>
-                        <p>(<?php echo $artikel2[1]; ?>)</p>
+                        <p><?php echo $kategori[0]; ?></p>
+                        <p>(<?php echo $kategori[1]; ?>)</p>
                       </a>
                     </li>
                   <?php } ?>
@@ -310,15 +302,15 @@ if (!isset($_GET['id'])) {
                 <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
                 <?php
                 $query = mysqli_query($koneksi, "select * from artikel order by datetime DESC LIMIT 4");
-                while ($artikel = mysqli_fetch_array($query)) {
+                while ($recent = mysqli_fetch_array($query)) {
                 ?>
                   <div class="media post_item">
-                    <img src="<?php echo $artikel[3]; ?>" alt="post" width="80" height="75">
+                    <img src="../mimin/beritadanartikel/images/<?php echo $recent[3]; ?>" alt="post" width="80" height="75">
                     <div class="media-body">
                       <a href="blog_details.html">
-                        <h3 style="color: #2d2d2d;"><?php echo $artikel[1]; ?></h3>
+                        <h3 style="color: #2d2d2d;"><?php echo $recent[1]; ?></h3>
                       </a>
-                      <p><?php echo date_format(date_create($artikel[2]), "d-M-Y H:i"); ?></p>
+                      <p><?php echo date_format(date_create($recent[2]), "d-M-Y H:i"); ?></p>
                     </div>
                   </div>
                   <!-- <div class="media post_item">

@@ -78,7 +78,7 @@
                             ?>
                                 <article class="blog_item">
                                     <div class="blog_item_img">
-                                        <img class="card-img rounded-0" src="<?php echo $artikel[3]; $recent_post[$c][2] = $artikel[3]; ?>" alt="">
+                                        <img class="card-img rounded-0" src="../mimin/beritadanartikel/images/<?php echo $artikel[3]; $recent_post[$c][2] = $artikel[3]; ?>" alt="">
                                         <a href="#" class="blog_item_date">
                                             <!-- Menampilkan angka-->
                                             <h3><?php echo date_format(date_create($artikel[2]), "d"); $recent_post[$c][0] = $artikel[2]; ?></h3>
@@ -95,7 +95,7 @@
                                         <p><?php echo $artikel[5]; ?></p>
                                         <ul class="blog-info-link">
                                             <!-- Nama Akun yg Upload Berita -->
-                                            <li><a href="#"><i class="fa fa-user"></i><?php echo $artikel[9]; ?></a></li>
+                                            <li><a href="#"><i class="fa fa-user"></i><?php echo $artikel[6]; ?></a></li>
                                             <li><a href="#"><i class="fa fa-comments"></i> 0 Comments</a></li>
                                         </ul>
                                     </div>
@@ -168,7 +168,7 @@
                                 for ($i = 1; $i < $c; $i++) {
                                 ?>
                                     <div class="media post_item">
-                                        <img src="<?php echo $recent_post[$i][2]; ?>" alt="post" width="80" height="75">
+                                        <img src="../mimin/beritadanartikel/images/<?php echo $recent_post[$i][2]; ?>" alt="post" width="80" height="75">
                                         <div class="media-body">
                                             <a href="blog_details.html">
                                                 <!-- Judul -->

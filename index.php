@@ -159,7 +159,7 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="single-blogs mb-30">
                                 <div class="blog-img">
-                                    <img src="assets/<?php echo $artikel[3]; ?>" alt="">
+                                    <img src="mimin/beritadanartikel/images/<?php echo $artikel[3]; ?>" alt="">
                                 </div>
                                 <div class="blog-caption">
                                     <h3><a href="article/detail.php?id=<?php echo $artikel[0]; ?>"><?php echo $artikel[1]; ?></a></h3>

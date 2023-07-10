@@ -78,6 +78,7 @@ if (!isset($_SESSION['id_user'])) {
                                                 <th>Tagging</th>
                                                 <th>Lihat</th>
                                                 <th>Status</th>
+                                                <th>Hapus</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -103,6 +104,7 @@ if (!isset($_SESSION['id_user'])) {
                                                         </div>
                                                     </div>
                                                 </td>
+                                                <td><a class="btn btn-danger btn-sm" href="hapus.php?idartikel=<?php echo $artikel[0];?>" onclick="alert('Anda akan menghapus artikel, anda yakin?');">Delete</a></td>
                                             </tr>
                                             <?php } ?>
                                         </tbody>

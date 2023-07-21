@@ -72,7 +72,7 @@
                         <div class="blog_left_sidebar">
                             <?php
                             //query mengambil data artikel lalu di looping sesuai jumlah banyaknya artikel
-                            $query = mysqli_query($koneksi, "select * from artikel order by datetime DESC");
+                            $query = mysqli_query($koneksi, "select * from artikel where status = 'checked' order by datetime DESC");
                             $c = 1; //untuk ditampilkan pada recent article
                             while ($artikel = mysqli_fetch_array($query)) {
                             ?>

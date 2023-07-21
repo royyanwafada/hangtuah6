@@ -122,8 +122,6 @@ if (!isset($_SESSION['id_user'])) {
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-
-
     </div>
     <!-- ./wrapper -->
 

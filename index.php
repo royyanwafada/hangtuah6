@@ -153,7 +153,7 @@
                 </div>
                 <div class="row">
                     <?php
-                    $query = mysqli_query($koneksi, "select * from artikel order by datetime DESC LIMIT 2");
+                    $query = mysqli_query($koneksi, "select * from artikel where status = 'checked' order by datetime DESC LIMIT 2");
                     while ($artikel = mysqli_fetch_array($query)) {
                     ?>
                         <div class="col-lg-6 col-md-6">

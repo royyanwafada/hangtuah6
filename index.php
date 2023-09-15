@@ -8,8 +8,7 @@
     <title>SMP Hang Tuah 6 Excellent</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <?php echo $icon; ?>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/iconht6.png">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -72,9 +71,52 @@
                     <div class="d-flex align-items-center justify-content-between flex-wrap position-relative">
                         <!-- Logo -->
                         <div class="left-side d-flex align-items-center">
-                            <?php echo $logoatas; ?>
+                            <div class="logo">
+                                <a href="."><img src="assets/img/logo/logoht6.png" alt=""></a>
+                            </div>
                             <!-- Main-menu -->
-                            <?php echo $menubar; ?>
+                                <div class="main-menu d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="#">About Us</a>
+                                                <ul class="submenu">
+                                                    <li><a href="profil/">Visi, Misi & Sejarah</a></li>
+                                                    <li><a href="guru-staff/">Teachers and Staff</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Student</a>
+                                                <ul class="submenu">
+                                                    <li><a href="article/">News & Article</a></li>
+                                                    <li><a href="#">OSIS</a></li>
+                                                    <li><a href="#">Extracurricular</a></li>
+                                                    <li><a href="#">Profil Alumni</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Facilities</a>
+                                                <ul class="submenu">
+                                                    <li><a href="infrastructure/">Infrastructure</a></li>
+                                                    <li><a href="#">E-learning</a></li>
+                                                    <li><a href="#">E-library</a></li>
+                                                </ul>
+                                            <li><a href="ppdb/">PPDB</a></li>
+                                            <li><a href="contact.html">Gallery</a></li>
+                                            <li><a href="contact/">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="header-right-btn d-flex f-right align-items-center">
+                                <a href="https://wa.me/<?php echo $wa[0];?>" class="header-btn2 d-none d-xl-inline-block">WA: <span>+<?php echo $wa[0];?></span></a>
+                                <!--<ul class=\"header-social d-none d-sm-block\">
+                                    <li><a href=\"https://www.facebook.com/smphangtuah6excellent/\"><i class=\"fab fa-facebook-square\"></i></a></li>
+                                    <li><a href=\"https://twitter.com/smphangtuah6exc\"><i class=\"fab fa-twitter-square\"></i></a></li>
+                                    <li><a href=\"https://youtube.com/channel/UCre1rjdTOA0GycySQCLloTg\"><i class=\"fab fa-youtube-square\"></i></a></li>
+                                    <li><a href=\"#\"><i class=\"fab fa-linkedin\"></i></a></li>
+                                    <li><a href=\"#\"><i class=\"fas fa-envelope\"></i></a></li>
+                                </ul>-->
+                            </div>
+                           
                             <!-- Mobile Menu -->
                             <div class="col-12">
                                 <div class="mobile_menu d-block d-lg-none"></div>
@@ -115,8 +157,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
-
-                        <div class="about-img about-img1  ">
+                        <div class="about-img about-img1">
                             <img src="assets/img/gallery/kepsek.jpg" alt="">
                         </div>
                     </div>
@@ -125,7 +166,7 @@
 
                             <div class="section-tittle m-0">
                                 <h2>Sambutan kepala sekolah</h2>
-                                <p class="mb-30" align="justify">Assalamu’alaikum warahmatullah wabarakatuh. Dengan rahmat Allah Subhanahu wa ta’ala. Kami mengucapkan selamat datang di website SMP Hang Tuah 6 Excellent Juanda. Besar harapan kami semoga website ini bermanfaat untuk memberi informasi tentang sekolah bagi siswa, guru, orang tua maupun masyarakat luas, memberi ruang untuk menyampaikan kegiatan-kegiatan sekolah, dan memotivasi untuk pengembangan sekolah. Kami akan berupaya untuk ikut mencerdaskan kehidupan bangsa dengan baik dalam rangka menyongsong era digital bagi anak-anak kita dan menjadikannya generasi islami yang berakhlak mulia, lulusan yang berkarakter, religius, menguasai IPTEK, berprestasi, berwawasan kemaritiman, berbudaya lingkungan, dan mampu bersaing di tingkat internasional.</p>
+                                <p class="mb-30" align="justify">Assalamua'laikum warahmatullah wabarakatuh. Dengan rahmat Allah Subhanahu wa ta'ala. Kami mengucapkan selamat datang di website SMP Hang Tuah 6 Excellent Juanda. Besar harapan kami semoga website ini bermanfaat untuk memberi informasi tentang sekolah bagi siswa, guru, orang tua maupun masyarakat luas, memberi ruang untuk menyampaikan kegiatan-kegiatan sekolah, dan memotivasi untuk pengembangan sekolah. Kami akan berupaya untuk ikut mencerdaskan kehidupan bangsa dengan baik dalam rangka menyongsong era digital bagi anak-anak kita dan menjadikannya generasi islami yang berakhlak mulia, lulusan yang berkarakter, religius, menguasai IPTEK, berprestasi, berwawasan kemaritiman, berbudaya lingkungan, dan mampu bersaing di tingkat internasional.</p>
 
                                 <p align="justify">Irra Fatukawati, S.Si., M.Si. <br>Kepala Sekolah SMP Hang Tuah 6 Excellent Juanda</p>
                                 <!--<a href="#" class="browse-btn mt-20">Learn More</a>-->
@@ -194,7 +235,7 @@
                         </div>
                     </div> -->
                 </div>
-                <a href="../hangtuah6/article" class="browse-btn mb-20">More News & Article</a>
+                <a href="article/" class="browse-btn mb-20">More News & Article</a>
             </div>
         </section>
         <!-- Services Ara E n d -->
@@ -204,7 +245,7 @@
             <div class="tailor-details">
                 <div class="section-tittle mb-40">
                     <h2>student admission (ppdb)</h2>
-                    <p>Kami telah membuka Pendaftaran Peserta Didik Baru Tahun Ajaran 2021-2022</p>
+                    <p>Kami telah membuka Pendaftaran Peserta Didik Baru Tahun Ajaran 2024-2025</p>
                 </div>
                 <!-- Single -->
                 <div class="single-gallery mb-15">
@@ -214,7 +255,7 @@
                                 <h3>Informasi Detail</h3>
                                 <p>Mengenai persyaratan dan jadwal pendaftaran</p>
                             </div>
-                            <a href="ppdb/index.php"><i class="ti-angle-right"></i></a>
+                            <a href="ppdb/"><i class="ti-angle-right"></i></a>
                         </div>
                     </div>
                 </div>

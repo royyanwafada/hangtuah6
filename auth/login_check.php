@@ -4,6 +4,9 @@ include "../assets/config/db.php";
 //get login information
 if (isset($_POST['submit'])) {
 
+    //$username = mysqli_real_escape_string($koneksi, $_POST['un']);
+    //$password = mysqli_real_escape_string($koneksi, $_POST['pwd']);
+
     $username = $_POST['un'];
     $password = $_POST['pwd'];
 
@@ -19,18 +22,21 @@ if (isset($_POST['submit'])) {
 	$id_user = mysqli_fetch_array($result);
 	//$id_user = mysqli_fetch_array($result);
 
-	if ($numrows == 1) {
+	if ($numrows == 1) 
+	{
 	    session_start();
 	    $_SESSION['id_user'] = $id_user[0];
 	    header('Location: ../mimin/');
 	} 
 
-	else {
+	else 
+	{
 	    header('Location: index.php?failed');
 	}
 }
 
-else {
+else 
+{
     header('Location: index.php');
 }
 

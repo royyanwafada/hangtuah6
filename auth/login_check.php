@@ -4,11 +4,11 @@ include "../assets/config/db.php";
 //get login information
 if (isset($_POST['submit'])) {
 
-    //$username = mysqli_real_escape_string($koneksi, $_POST['un']);
-    //$password = mysqli_real_escape_string($koneksi, $_POST['pwd']);
+    $username = mysqli_real_escape_string($koneksi, $_POST['un']);
+    $password = mysqli_real_escape_string($koneksi, $_POST['pwd']);
 
-    $username = $_POST['un'];
-    $password = $_POST['pwd'];
+    //$username = $_POST['un'];
+    //$password = $_POST['pwd'];
 
 	// Check connection
 	// if ($mysqli->connect_errno) {

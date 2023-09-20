@@ -107,7 +107,7 @@
                                 </div>
                             </div>
                             <div class="header-right-btn d-flex f-right align-items-center">
-                                <a href="https://wa.me/<?php echo $wa[0];?>" class="header-btn2 d-none d-xl-inline-block">WA: <span>+<?php echo $wa[0];?></span></a>
+                                <a href="https://wa.me/<?php echo $nomor_wa_business;?>" class="header-btn2 d-none d-xl-inline-block">WA: <span>+<?php echo $nomor_wa_business;?></span></a>
                                 <!--<ul class=\"header-social d-none d-sm-block\">
                                     <li><a href=\"https://www.facebook.com/smphangtuah6excellent/\"><i class=\"fab fa-facebook-square\"></i></a></li>
                                     <li><a href=\"https://twitter.com/smphangtuah6exc\"><i class=\"fab fa-twitter-square\"></i></a></li>
@@ -188,24 +188,23 @@
                             <!-- <p>Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer
                                 efficitur tellus metus, sed feugiat leo posuere ac. Morbi vitae tincidunt mi, et
                                 malesuada massa.</p> -->
-
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <?php
-                    $query = mysqli_query($koneksi, "select * from artikel where status = 'checked' order by datetime DESC LIMIT 2");
-                    while ($artikel = mysqli_fetch_array($query)) {
+                    $query1 = mysqli_query($koneksi, "select * from artikel where status = 'checked' order by datetime DESC LIMIT 2");
+                    while ($recent_article = mysqli_fetch_array($query1)) {
                     ?>
                         <div class="col-lg-6 col-md-6">
                             <div class="single-blogs mb-30">
                                 <div class="blog-img">
-                                    <img src="mimin/beritadanartikel/images/<?php echo $artikel[3]; ?>" alt="">
+                                    <img src="mimin/beritadanartikel/images/<?php echo $recent_article[3]; ?>" alt="">
                                 </div>
                                 <div class="blog-caption">
-                                    <h3><a href="article/detail.php?id=<?php echo $artikel[0]; ?>"><?php echo $artikel[1]; ?></a></h3>
-                                    <p><?php echo $artikel[5]; ?>....</p>
-                                    <a href="article/detail.php?id=<?php echo $artikel[0]; ?>" class="browse-btn">Read More</a>
+                                    <h3><a href="article/detail.php?id=<?php echo $recent_article[0]; ?>"><?php echo $recent_article[1]; ?></a></h3>
+                                    <?php echo substr($recent_article[4],0,200);?>.....</p>
+                                    <a href="article/detail.php?id=<?php echo $recent_article[0]; ?>" class="browse-btn">Read More</a>
                                 </div>
                             </div>
                         </div> <?php } ?>

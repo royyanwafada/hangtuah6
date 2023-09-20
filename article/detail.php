@@ -18,7 +18,7 @@ if (!isset($_GET['id'])) {
     <title>News & Article | SMP Hang Tuah 6 Excellent</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php echo $icon; ?>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/icon/iconht6.png">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
@@ -41,9 +41,51 @@ if (!isset($_GET['id'])) {
             <div class="d-flex align-items-center justify-content-between flex-wrap position-relative">
                 <!-- Logo -->
                 <div class="left-side d-flex align-items-center">
-                    <?php echo $logoatas; ?>
+                    <div class="logo">
+                        <a href="../"><img src="../assets/img/logo/logoht6.png" alt=""></a>
+                    </div>
                     <!-- Main-menu -->
-                    <?php echo $menubar; ?>
+                    <div class="main-menu d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation\">
+                                        <li><a href="../">Home</a></li>
+                                        <li><a href="#">About Us</a>
+                                            <ul class="submenu">
+                                                <li><a href="../profil">Visi, Misi & Sejarah</a></li>
+                                                <li><a href="../guru-staff/">Teachers and Staff</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Student</a>
+                                            <ul class="submenu">
+                                                <li><a href="../article/">News & Article</a></li>
+                                                <li><a href="#">OSIS</a></li>
+                                                <li><a href="#">Extracurricular</a></li>
+                                                <li><a href="#">Profil Alumni</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Facilities</a>
+                                            <ul class="submenu">
+                                                <li><a href="../infrastructure/">Infrastructure</a></li>
+                                                <li><a href="#">E-learning</a></li>
+                                                <li><a href="#">E-library</a></li>
+                                            </ul>
+                                        <li><a href="../ppdb/">PPDB</a></li>
+                                        <li><a href="../contact.html">Gallery</a></li>
+                                        <li><a href="../contact/">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="header-right-btn d-flex f-right align-items-center\">
+                            <a href="https://wa.me/<?php echo $wa[0];?>?text=Halo Admin" class="header-btn2 d-none d-xl-inline-block">WA: <span>+<?php echo $wa[0];?></span></a>
+                            <!--<ul class=\"header-social d-none d-sm-block\">
+                                <li><a href=\"https://www.facebook.com/smphangtuah6excellent/\"><i class=\"fab fa-facebook-square\"></i></a></li>
+                                <li><a href=\"https://twitter.com/smphangtuah6exc\"><i class=\"fab fa-twitter-square\"></i></a></li>
+                                <li><a href=\"https://youtube.com/channel/UCre1rjdTOA0GycySQCLloTg\"><i class=\"fab fa-youtube-square\"></i></a></li>
+                                <li><a href=\"#\"><i class=\"fab fa-linkedin\"></i></a></li>
+                                <li><a href=\"#\"><i class=\"fas fa-envelope\"></i></a></li>
+                            </ul>-->
+                        </div>
                     <!-- Mobile Menu -->
                     <div class="col-12">
                         <div class="mobile_menu d-block d-lg-none"></div>
@@ -301,13 +343,13 @@ if (!isset($_GET['id'])) {
 
                 <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
                 <?php
-                $query = mysqli_query($koneksi, "select * from artikel order by datetime DESC LIMIT 4");
+                $query = mysqli_query($koneksi, "select * from artikel order by datetime DESC LIMIT 3");
                 while ($recent = mysqli_fetch_array($query)) {
                 ?>
                   <div class="media post_item">
                     <img src="../mimin/beritadanartikel/images/<?php echo $recent[3]; ?>" alt="post" width="80" height="75">
                     <div class="media-body">
-                      <a href="blog_details.html">
+                      <a href="#">
                         <h3 style="color: #2d2d2d;"><?php echo $recent[1]; ?></h3>
                       </a>
                       <p><?php echo date_format(date_create($recent[2]), "d-M-Y H:i"); ?></p>

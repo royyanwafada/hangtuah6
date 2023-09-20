@@ -3,6 +3,8 @@ include "assets/config/db.php";
 
 // $query = mysqli_query($koneksi, "select component from sosial_media where id='WA'");
 $wa = mysqli_fetch_array(mysqli_query($koneksi, "select component from sosial_media where id='WA'"));
+$nomor_wa_business = $wa[0];
+
 $telp = mysqli_fetch_array(mysqli_query($koneksi, "select component from sosial_media where id='TELP'"));
 $fb = 0;
 $twitter = 0;

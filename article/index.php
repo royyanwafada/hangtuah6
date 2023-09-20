@@ -137,7 +137,7 @@
                                             <!-- Judul Artikel, Font Bold/Hijau-->
                                             <h2 class="blog-head" style="color: #2d2d2d;"> <?php echo $artikel[1]; $recent_post[$c][1] = $artikel[1]; ?></h2>
                                         </a>
-                                        <p><?php echo $artikel[4]; ?></p>
+                                        <!--<p>--><?php echo substr($artikel[4],0,200);?>.....</p>
                                         <ul class="blog-info-link">
                                             <!-- Nama Akun yg Upload Berita -->
                                             <li><a href="#"><i class="fa fa-user"></i><?php echo $artikel[6]; ?></a></li>

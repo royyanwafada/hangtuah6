@@ -104,7 +104,7 @@ if (!isset($_SESSION['id_user'])) {
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td><a class="btn btn-danger btn-sm" href="hapus.php?idartikel=<?php echo $artikel[0];?>" onclick="alert('Anda akan menghapus artikel, anda yakin?');">Delete</a></td>
+                                                <td><a class="btn btn-danger btn-sm" href="hapus.php?idartikel=<?php echo $artikel[0];?>&nama_file=<?php echo $artikel[3];?>" onclick="alert('Anda akan menghapus artikel, anda yakin?');">Delete</a></td>
                                             </tr>
                                             <?php } ?>
                                         </tbody>

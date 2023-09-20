@@ -7,7 +7,7 @@ if(isset($_POST['submit']))
 	$target_dir = "../images/";
 	$judul = $_POST['judul'];
 	$tanggal = date_format(new datetime($_POST['tanggal']),"Y-m-d H:i:s"); //ubah format jam dari 12hr ke 24hr
-	$artikel = $_POST['artikel'];
+	$artikel = mysqli_real_escape_string($koneksi, $_POST['artikel']);
 	$tagging = $_POST['tagging'];
 	$errorfoto = 1;
 	$newfilename=NULL;
